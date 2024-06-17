@@ -9,6 +9,7 @@ import re
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
+sys.path.append(os.path.join('../', os.path.dirname(SCRIPT_DIR)))
 
 from emoji_to_image import emoji_to_image
 
