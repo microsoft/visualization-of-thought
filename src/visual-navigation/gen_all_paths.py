@@ -173,10 +173,12 @@ def gen_all_solutions(total_step:int):
             solution = gen_board_by_dir_list(dir_list)
             if solution is None:
                 continue
-
-            map_file_path = os.path.join(dest_folder, '%d-map.txt' % file_idx)
-            map_img_path = os.path.join(dest_folder, '%d.png' % file_idx)
-            solution_file_path = os.path.join(dest_folder, '%d-solution.json' % file_idx)
+            
+            case_folder = os.path.join(dest_folder, f'{file_idx}')
+            os.makedirs(case_folder, exist_ok=True)
+            map_file_path = os.path.join(case_folder, 'map.txt')
+            map_img_path = os.path.join(case_folder, 'map.png')
+            solution_file_path = os.path.join(case_folder, 'solution.json')
             with open(map_file_path, 'w') as f:
                 f.write(format_grid(solution['initial_map']))
             emoji_to_image(solution['initial_map'], map_img_path)
