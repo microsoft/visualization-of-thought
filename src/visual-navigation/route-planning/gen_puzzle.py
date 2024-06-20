@@ -10,6 +10,7 @@ parser.add_argument('--config-folder', type=str, default='../configurations')
 parser.add_argument('--puzzle-folder', type=str, default='./puzzles')
 parser.add_argument('--prompt-folder', type=str, default='./prompts')
 parser.add_argument('--output-jsonl', required=True, help='Path to the output JSONL file.')
+parser.add_argument('--difficulty', required=True, type=int, help='difficulty level of generated puzzles')
 
 
 opt = parser.parse_args()
@@ -50,7 +51,9 @@ def add_jsonl(config_folder, case_folder, output_jsonl):
                 "desc_multimodal": desc_multimodal,
                 "answer": answer,
                 "puzzle_path": os.path.relpath(case_folder, os.path.dirname(output_jsonl)),
-                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl))
+                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl)),
+                "difficulty": opt.difficulty,
+                "instance_id": os.path.relpath(case_folder, opt.puzzle_folder)
             }
             outfile.write(json.dumps(json_record) + '\n')
 

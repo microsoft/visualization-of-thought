@@ -19,6 +19,7 @@ parser.add_argument('--puzzle-folder', type=str, default='data/level-2')
 parser.add_argument('--prompt-folder', type=str, default='./prompts')
 parser.add_argument('--seed', type=int, default=42)
 parser.add_argument('--output-jsonl', required=True, help='Path to the output JSONL file.')
+parser.add_argument('--difficulty', required=True, type=int, help='difficulty level of generated puzzles')
 
 
 opt = parser.parse_args()
@@ -208,7 +209,9 @@ def add_jsonl(config_folder, question_folder, output_jsonl):
                 "desc_multimodal": desc_multimodal,
                 "answer": answer,
                 "puzzle_path": os.path.relpath(question_folder, os.path.dirname(output_jsonl)),
-                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl))
+                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl)),
+                "difficulty": opt.difficulty,
+                "instance_id": os.path.relpath(question_folder, opt.puzzle_folder)
             }
             outfile.write(json.dumps(json_record) + '\n')
 
@@ -238,7 +241,7 @@ if __name__ == '__main__':
                     continue
                 problem['chosed_polyomino'] = polyomino_name
                 substitute_dict = get_substitute_dict(problem, options)
-                question_folder = os.path.join(output_folder, 'puzzles', polyomino_name)
+                question_folder = os.path.join(output_folder, polyomino_name)
                 os.makedirs(question_folder, exist_ok=True)
                 for setting, template in setting_templates:
                     prompt_path = os.path.join(question_folder, f'{setting}.txt')

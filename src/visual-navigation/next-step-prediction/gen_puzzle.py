@@ -10,6 +10,7 @@ parser.add_argument('--config-folder', type=str, default='../configurations')
 parser.add_argument('--puzzle-folder', type=str, default='./puzzles')
 parser.add_argument('--prompt-folder', type=str, default='./prompts')
 parser.add_argument('--output-jsonl', required=True, help='Path to the output JSONL file.')
+parser.add_argument('--difficulty', required=True, type=int, help='difficulty level of generated puzzles')
 
 
 opt = parser.parse_args()
@@ -53,7 +54,10 @@ def add_jsonl(config_folder, case_folder, output_jsonl):
                 "desc_multimodal": desc_multimodal,
                 "answer": answer,
                 "puzzle_path": os.path.relpath(case_folder, os.path.dirname(output_jsonl)),
-                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl))
+                "config_path": os.path.relpath(config_folder, os.path.dirname(output_jsonl)),
+                "difficulty": opt.difficulty,
+                "instance_id": os.path.relpath(case_folder, opt.puzzle_folder)
+                
             }
             outfile.write(json.dumps(json_record) + '\n')
 
@@ -86,7 +90,7 @@ if __name__ == '__main__':
                     break
                 instruction_list.append(f'{idx + 1}. Move {step} to the end of continuous road.')
                 config_json['instruction_list'] = instruction_list
-                question_folder = os.path.join(output_folder, 'QA', f'{idx}')
+                question_folder = os.path.join(output_folder, f'{idx}')
                 os.makedirs(question_folder, exist_ok=True)
                 substitute_dict = get_substitute_dict(config_json)
                 for setting, template in setting_templates:
