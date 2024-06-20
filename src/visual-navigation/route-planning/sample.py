@@ -51,8 +51,7 @@ def main(jsonl_file_path: str, output_dir: str, setting: str, target_difficulty:
         difficulty = instance['difficulty']
         if target_difficulty != 0 and difficulty != target_difficulty:
             continue
-        #output_file_path = os.path.join(output_dir, f'level-{difficulty}', instance_id, "output.txt")
-        output_file_path = os.path.join(output_dir, f'{difficulty}', f'{instance_id}-output.txt')
+        output_file_path = os.path.join(output_dir, f'level-{difficulty}', instance_id, "output.txt")
 
         if not os.path.exists(output_file_path):
             prompt_path = os.path.join(jsonl_dir, puzzle_folder, f'{setting}.txt')
