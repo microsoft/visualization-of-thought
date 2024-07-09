@@ -1,0 +1,86 @@
+Let's visualize the grid based on the information given:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+| B | A | Q |
++---+---+---+
+| T | N | B |
++---+---+---+
+```
+
+Where:
+- C is for Chickadee
+- I is for Ibizan Hound
+- S is for Square academic cap
+- B is for Brambling
+- A is for Alpine ibex
+- Q is for Quill
+- T is for Box Turtle
+- N is for Newt
+- B is for Boa Constrictor
+
+You start at the position where the Alpine ibex (A) is located:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+| B | A | Q |
++---+---+---+
+| T | N | B |
++---+---+---+
+```
+
+Then you go down by one step:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+| B |   | Q |
++---+---+---+
+| T | A | B |
++---+---+---+
+```
+
+Then you go left by one step:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+| B |   | Q |
++---+---+---+
+| A | T | B |
++---+---+---+
+```
+
+Then you go up by one step:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+| A |   | Q |
++---+---+---+
+|   | T | B |
++---+---+---+
+```
+
+And finally, you go right by one step:
+
+```
++---+---+---+
+| C | I | S |
++---+---+---+
+|   | A | Q |
++---+---+---+
+|   | T | B |
++---+---+---+
+```
+
+You will find the Alpine ibex again, as you have returned to the original position of the Alpine ibex after making the sequence of moves.
+
+Answer: You will find the Alpine ibex.

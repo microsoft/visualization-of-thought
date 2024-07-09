@@ -1,0 +1,47 @@
+Let's start by examining the target rectangle and the provided polyominoes. We need to fit the Tetromino I, Tetromino L, and Tetromino T into the empty squares without overlapping any existing polyominoes or going outside the rectangle.
+
+Target rectangle with 12 empty squares:
+```
+🟥🟥🟥🟥
+⬜⬜⬜⬜
+⬜⬜⬜🟪
+⬜⬜🟪🟪
+⬜⬜⬜🟪
+```
+
+We have two variations for Tetromino I, which is a straight line of 4 blocks. It can only fit in the second row horizontally or in the first column vertically. However, the first column is not completely empty, so the only option is to place it horizontally in the second row.
+
+After placing Tetromino I:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+⬜⬜⬜🟪
+⬜⬜🟪🟪
+⬜⬜⬜🟪
+```
+
+Next, we have Tetromino T, which has two variations. Variation 1 cannot fit because it requires two empty squares horizontally next to each other, which we don't have. Variation 2 can fit in the first column, with the middle block of the T going into the single empty square in the third row.
+
+After placing Tetromino T:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟨⬜⬜🟪
+🟨🟪🟪
+🟨⬜🟪
+```
+
+Now, we have Tetromino L left with two variations. Variation 4 cannot fit because it would require three empty squares horizontally next to each other, which we don't have. Variation 8 can fit in the bottom left corner, with the single block of the L going into the single empty square in the fifth row.
+
+After placing Tetromino L:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟨🟦⬜🟪
+🟨🟪🟪
+🟨🟦🟪
+```
+
+We can see that Variation 8 of Tetromino L fits perfectly into the remaining space. Therefore, the correct variation of Tetromino L is:
+
+B. 8

@@ -1,0 +1,26 @@
+Let's first map out the grid based on the information given:
+
+1. Start at the bottom-left corner with a promontory.
+2. Move right to find a strawberry.
+3. Move right to find a goldfish.
+4. Move up to find a shower curtain.
+5. Move left to find a throne.
+6. Move left to find a bathtub.
+7. Move up to find a white-headed capuchin.
+8. Move right to find a gong.
+9. Move right to find a cardoon.
+
+The grid now looks like this:
+
+```
+| white-headed capuchin | gong | cardoon |
+| bathtub               | throne | shower curtain |
+| promontory            | strawberry | goldfish |
+```
+
+Now, you start at the throne and make the following moves:
+1. Move right by one step: You are now at the shower curtain.
+2. Move up by one step: You are now at the gong.
+3. Move down by one step: You return to the shower curtain.
+
+Answer: You will find a shower curtain.

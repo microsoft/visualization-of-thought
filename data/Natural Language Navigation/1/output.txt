@@ -1,0 +1,26 @@
+Let's visualize the grid based on the information given:
+
+```
++---+---+---+
+| d | m | b |
++---+---+---+
+| S | A | r |
++---+---+---+
+| B | S | a |
++---+---+---+
+```
+
+Where:
+- B = Broom
+- S = Saluki
+- a = acoustic guitar
+- r = rapeseed
+- A = Appenzeller Sennenhund
+- S = Samoyed
+- d = dhole
+- m = mobile phone
+- b = bassinet
+
+You start at the position of the Broom (B), which is the bottom-left corner. Then you go right by one step, which brings you to the Saluki (S). Then you go left by one step, which brings you back to the Broom (B).
+
+Answer: You will find a Broom.

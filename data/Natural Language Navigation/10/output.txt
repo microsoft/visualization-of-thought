@@ -1,0 +1,53 @@
+Let's visualize the grid based on the information given:
+
+1. Start at the bottom-left corner with a Pickelhaube.
+2. Move right to a toy store.
+3. Move right to a sea lion.
+4. Move up to an eastern diamondback rattlesnake.
+5. Move left to a maraca.
+6. Move left to a tank.
+7. Move up to a beaver.
+8. Move right to an English Setter.
+9. Move right to an altar.
+
+The grid now looks like this:
+
+```
+| beaver | English Setter | altar |
+| tank   | maraca         | eastern diamondback rattlesnake |
+| Pickelhaube | toy store | sea lion |
+```
+
+Now, you start at the position where the maraca is located:
+
+| beaver | English Setter | altar |
+| tank   | **maraca**     | eastern diamondback rattlesnake |
+| Pickelhaube | toy store | sea lion |
+
+Then you go down by one step:
+
+| beaver | English Setter | altar |
+| tank   | maraca         | eastern diamondback rattlesnake |
+| Pickelhaube | **toy store** | sea lion |
+
+Then you go right by one step:
+
+| beaver | English Setter | altar |
+| tank   | maraca         | eastern diamondback rattlesnake |
+| Pickelhaube | toy store | **sea lion** |
+
+Then you go up by one step:
+
+| beaver | English Setter | altar |
+| tank   | maraca         | **eastern diamondback rattlesnake** |
+| Pickelhaube | toy store | sea lion |
+
+And finally, you go left by one step:
+
+| beaver | English Setter | altar |
+| tank   | **maraca**     | eastern diamondback rattlesnake |
+| Pickelhaube | toy store | sea lion |
+
+You end up back at the position where the maraca is located.
+
+Answer: You will find a maraca.
