@@ -1,0 +1,16 @@
+Navigation Task: for a provided map, 🏠 is the home as starting point, 🏢 is the office as the destination. ⬜ means the road, 🚧 means the obstacle. There exists one and only one viable route for each map. Each step you choose a direction and move to the end of the continuous road or the destination.
+
+map:
+```
+${INITIAL_MAP}
+```
+Starting from 🏠, to navigate to 🏢, you made following movements: 
+${NAVIGATING_INSTRUCTIONS}
+
+What's the direction of next movement?
+A. Up
+B. Left
+C. Down
+D. Right
+
+Visualize the state after each reasoning step.

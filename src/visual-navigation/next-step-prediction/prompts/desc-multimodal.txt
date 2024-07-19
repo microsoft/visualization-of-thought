@@ -1,0 +1,30 @@
+[
+        {
+        "role": "user",
+        "content": [
+            {
+            "type": "text",
+            "text": "Navigation Task: for a provided map, 🏠 is the home as starting point, 🏢 is the office as the destination. ⬜ means the road, 🚧 means the obstacle. There exists one and only one viable route for each map. Each step you choose a direction and move to the end of the continuous road or the destination."
+            },
+            {
+            "type": "text",
+            "text": "map:"
+            },
+            {
+            "type": "image_url",
+            "image_url": {
+                "url": "data:image/jpeg;base64,${ENCODED_MAP}"
+            }
+            },
+            {
+                "type": "text",
+                "text": "Starting from 🏠, to navigate to 🏢, you made following movements:"
+            },
+            ${MULTIMODAL_NAVAIGATING_INSTRUCTION},
+			{
+			"type": "text",
+            "text": "What's the direction of next movement?\nA.Up\nB.Left\nC.Down\nD.Right"
+			}
+        ]
+        }
+    ]

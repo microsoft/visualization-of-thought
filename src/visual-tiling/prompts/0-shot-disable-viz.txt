@@ -1,0 +1,14 @@
+Task: given a set of polyominoes and corresponding variations of each polyomino, fit them into the empty squares (⬜) in the target rectangle without overlapping any existing polyominoes or going outside the rectangle. The variations allow only translation, not rotation or reflection. It's guaranteed that there always exists a solution.
+-------------------------
+Target rectangle with ${EMPTY_SQUARES} empty squares:
+${TARGET_RECTANGLE}
+
+Provided polyominoes:
+${PROVIDED_POLYOMINOES}
+-------------------------
+${POLYOMINO_VARIATIONS}
+
+To fit all the provided polyominoes into the empty squares (⬜), what's the correct variation of ${CHOSED_POLYOMINO}?
+${OPTIONS}
+
+Don't use visualization. Let's think step by step.

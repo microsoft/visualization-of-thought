@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+data/
+puzzles/
+configurations/
+*.jsonl
+results/
+results-*/
+dataset/*
+__pycache__

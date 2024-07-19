@@ -1,0 +1,20 @@
+{
+  "name": "polyomino-solver",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "run.js",
+  "scripts": {
+    "test": "node run.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boolean-sat": "^1.0.0",
+    "dlxlib": "^1.0.3",
+    "foundation-sites": "^6.8.1",
+    "minimist": "^1.2.8",
+    "s-expression": "^3.1.1",
+    "web-component-polyomino": "^4.0.2"
+  }
+}

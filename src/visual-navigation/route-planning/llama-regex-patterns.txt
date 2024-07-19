@@ -1,0 +1,8 @@
+\d+[:\.].*?(?:mov(?:e|ing)|take(?:\s+the)?|go(?:ing)?)\s+(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?)
+^\d+\.\s*(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?)
+\*\*(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?)\*\*
+:.*?(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?|west|east|north|south)
+I(?:'ll| can).*(?:move|go) (?:to )?(?:the )?(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?|west|east|north|south)
+I(?:'ll| can) (?:move|go)[^,.]*(?:to )?(?:the )?(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?|west|east|north|south)
+moved[^.,]*(?:to )?(?:the )?(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?)
+(?:is|be) (?:to )?(?:the )?(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?)
