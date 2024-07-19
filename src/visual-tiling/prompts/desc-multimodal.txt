@@ -1,0 +1,44 @@
+[
+  {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Task: given a set of polyominoes and corresponding variations of each polyomino, fit them into the empty squares (⬜) in the target rectangle without overlapping any existing polyominoes or going outside the rectangle. The variations allow only translation, not rotation or reflection. It's guaranteed that there always exists a solution."
+        },
+        {
+          "type": "text",
+          "text": "-------------------------"
+        },
+        {
+          "type": "text",
+          "text": "Target rectangle with ${EMPTY_SQUARES} empty squares:"
+        },
+        {
+            "type": "image_url",
+            "image_url": {
+                "url": "data:image/jpeg;base64,${ENCODED_RECTANGLE}"
+            }
+        },
+        {
+          "type": "text",
+          "text": "Provided polyominoes:"
+        },
+        ${MULTIMODAL_PROVIDED_POLYOMINOES},
+        {
+          "type": "text",
+          "text": "-------------------------"
+        },
+        ${MULTIMODAL_POLYOMINO_VARIATIONS},
+        {
+          "type": "text",
+          "text": "-------------------------"
+        },
+        {
+          "type": "text",
+          "text": "To fit all the provided polyominoes into the empty squares (⬜), what's the correct variation of ${CHOSED_POLYOMINO}?"
+        },
+        ${MULTIMODAL_OPTIONS}
+      ]
+  }
+]

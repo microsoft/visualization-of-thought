@@ -1,0 +1,16 @@
+[A-D]\. (\w+)\.
+[A-D]\. (\w+)$
+[A-D]\.(\w+)\.
+[A-D]\.(\w+)$
+(?:is|be) [A-D]\. (\w+)[,]
+(Up|up|Right|right|Down|down|Left|left) \([A-D]\)
+\([A-D]\. (\w+)\)
+"[A-D]\. (\w+)"
+\**[A-D]\. (\w+)\**
+\**Answer:\** ([A-D])
+\*\*([A-D])\*\*
+answer is[\s*:]\s*\**([A-D])\**\.
+(?:"|`|\*\*)?(Up|up|Right|right|Down|down|Left|left)(?:"|`|\*\*)? \((?:option )?[A-D]\)
+(left(?:ward|wards)?|right(?:ward|wards)?|up(?:ward|wards)?|down(?:ward|wards)?) \([A-D]\)
+(?:is|be) to(?: move)?(?: to)?(?: the)? (Up|up|Right|right|Down|down|Left|left)
+\*\*(?:Direction: )?(Up|up|Right|right|Down|down|Left|left)\*\*
