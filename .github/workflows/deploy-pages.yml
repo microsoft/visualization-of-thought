@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: visualization-of-thought.github.io
+      url: https://microsoft.github.io/visualization-of-thought
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
