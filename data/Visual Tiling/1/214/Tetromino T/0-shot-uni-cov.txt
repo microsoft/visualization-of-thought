@@ -1,0 +1,47 @@
+Task: given a set of polyominoes and corresponding variations of each polyomino, fit them into the empty squares (⬜) in the target rectangle without overlapping any existing polyominoes or going outside the rectangle. The variations allow only translation, not rotation or reflection. It's guaranteed that there always exists a solution.
+-------------------------
+Target rectangle with 8 empty squares:
+```
+🟥🟥🟥🟪
+🟥⬜🟪🟪
+⬜⬜⬜🟪
+🟦🟦🟦🟦
+⬜⬜⬜⬜
+```
+
+Provided polyominoes:
+1. Tetromino T (🟩)
+2. Tetromino I (🟨)
+-------------------------
+Variations for Tetromino T:
+Variation 1 fitting into its bounding box:
+```
+⬜🟩⬜
+🟩🟩🟩
+```
+Variation 4 fitting into its bounding box:
+```
+🟩🟩🟩
+⬜🟩⬜
+```
+-------------------------
+Variations for Tetromino I:
+Variation 1 fitting into its bounding box:
+```
+🟨
+🟨
+🟨
+🟨
+```
+Variation 2 fitting into its bounding box:
+```
+🟨🟨🟨🟨
+```
+-------------------------
+
+To fit all the provided polyominoes into the empty squares (⬜), what's the correct variation of Tetromino T?
+A. 1
+B. 4
+C. Neither
+
+Visualize the state after each reasoning step.

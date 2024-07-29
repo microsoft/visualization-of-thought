@@ -20,33 +20,43 @@ The grid now looks like this:
 
 Now, you start at the position where the maraca is located:
 
+```
 | beaver | English Setter | altar |
 | tank   | **maraca**     | eastern diamondback rattlesnake |
 | Pickelhaube | toy store | sea lion |
+```
 
 Then you go down by one step:
 
+```
 | beaver | English Setter | altar |
 | tank   | maraca         | eastern diamondback rattlesnake |
 | Pickelhaube | **toy store** | sea lion |
+```
 
 Then you go right by one step:
 
+```
 | beaver | English Setter | altar |
 | tank   | maraca         | eastern diamondback rattlesnake |
 | Pickelhaube | toy store | **sea lion** |
+```
 
 Then you go up by one step:
 
+```
 | beaver | English Setter | altar |
 | tank   | maraca         | **eastern diamondback rattlesnake** |
 | Pickelhaube | toy store | sea lion |
+```
 
 And finally, you go left by one step:
 
+```
 | beaver | English Setter | altar |
 | tank   | **maraca**     | eastern diamondback rattlesnake |
 | Pickelhaube | toy store | sea lion |
+```
 
 You end up back at the position where the maraca is located.
 

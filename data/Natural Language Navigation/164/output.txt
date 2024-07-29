@@ -1,0 +1,67 @@
+Let's visualize the grid based on the information given:
+
+```
+modem - greenhouse - jackfruit
+snoek - tusker     - radio
+remote - shoe store - cassette
+```
+
+You start at the position where the tusker is located:
+
+```
+modem - greenhouse - jackfruit
+snoek - (tusker)   - radio
+remote - shoe store - cassette
+```
+
+Then you go down by one step:
+
+```
+modem - greenhouse - jackfruit
+snoek - tusker     - radio
+remote - (shoe store) - cassette
+```
+
+Then you go left by one step:
+
+```
+modem - greenhouse - jackfruit
+snoek - tusker     - radio
+(remote) - shoe store - cassette
+```
+
+Then you go up by one step:
+
+```
+modem - greenhouse - jackfruit
+(snoek) - tusker     - radio
+remote - shoe store - cassette
+```
+
+Then you go up by one step:
+
+```
+(modem) - greenhouse - jackfruit
+snoek - tusker     - radio
+remote - shoe store - cassette
+```
+
+Then you go right by one step:
+
+```
+modem - (greenhouse) - jackfruit
+snoek - tusker       - radio
+remote - shoe store  - cassette
+```
+
+And finally, you go down by one step:
+
+```
+modem - greenhouse - jackfruit
+snoek - (tusker)   - radio
+remote - shoe store - cassette
+```
+
+After following all the steps, you end up at the position where the tusker is located again.
+
+Answer: You will find a tusker.

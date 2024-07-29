@@ -1,0 +1,12 @@
+Let's follow the instructions step by step, starting from the bottom-left corner where the cassette player is located:
+
+1. Go right by one step: You find a wool.
+2. Go right by one step: You find a conch.
+3. Go up by one step: You find a moving van.
+4. Go left by one step: You find a confectionery store.
+5. Go left by one step: You find a pot pie.
+6. Go up by one step: You find a siamang.
+7. Go right by one step: You find a black-and-white colobus.
+8. Go down by one step: You find a confectionery store.
+
+Answer: You will find a confectionery store.

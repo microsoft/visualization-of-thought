@@ -1,0 +1,19 @@
+Let's visualize the grid based on the information given:
+
+```
+hook - tights - tree frog
+baboon - minibus - Cocker Spaniels
+rapeseed - frying pan - Japanese Chin
+```
+
+Now, let's follow the instructions from the position of the frying pan:
+
+1. Start at the frying pan.
+2. Go left by one step: You arrive at the rapeseed.
+3. Go up by one step: You arrive at the baboon.
+4. Go right by one step: You arrive at the minibus.
+5. Go up by one step: You arrive at the tights.
+6. Go left by one step: You arrive at the hook.
+7. Go down by one step: You arrive at the baboon again.
+
+Answer: You will find a baboon.

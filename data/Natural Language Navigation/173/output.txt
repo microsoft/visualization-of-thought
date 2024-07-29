@@ -1,0 +1,24 @@
+Let's first map out the grid based on the initial description:
+
+```
+jack-o'-lantern | African rock python | tow truck
+typewriter keyboard | envelope | cock
+semi-trailer truck | prairie grouse | mongoose
+```
+
+You start at the position where the semi-trailer truck is located, which is the bottom-left corner of the grid.
+
+Now, follow the instructions:
+
+1. Go down by one step: You can't go down because you are already at the bottom row. So you stay at the semi-trailer truck.
+2. Go right by one step: You move to the cell with the prairie grouse.
+3. Go right by one step: You move to the cell with the mongoose.
+4. Go up by one step: You move to the cell with the cock.
+5. Go up by one step: You can't go up because you are already at the top row. So you stay at the cock.
+6. Go left by one step: You move to the cell with the envelope.
+7. Go left by one step: You move to the cell with the typewriter keyboard.
+8. Go down by one step: You move to the cell with the semi-trailer truck.
+
+After following all the steps, you end up back at the semi-trailer truck.
+
+Answer: You will find the semi-trailer truck.

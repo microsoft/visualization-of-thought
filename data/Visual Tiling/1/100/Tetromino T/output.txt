@@ -1,0 +1,35 @@
+First, let's look at the target rectangle and identify the empty squares (⬜) where we need to fit the polyominoes:
+
+```
+🟥🟥🟥🟪
+⬜🟥⬜🟪
+⬜⬜⬜🟪
+⬜🟨⬜🟪
+⬜🟨🟨🟨
+```
+
+We have two polyominoes to fit into this rectangle: Tetromino I (🟩) and Tetromino T (🟦). The Tetromino I can only fit in a straight line of four empty squares, either horizontally or vertically. The Tetromino T needs to fit in a configuration of three squares in a row with one additional square adjacent to the middle square.
+
+Let's start with the Tetromino I (🟩), as it has the most restrictive shape. We can see that there is only one place where it can fit: vertically in the first column. Let's place it there:
+
+```
+🟥🟥🟥🟪
+🟩🟥⬜🟪
+🟩⬜⬜🟪
+🟩🟨⬜🟪
+🟩🟨🟨🟨
+```
+
+Now, we have to fit the Tetromino T (🟦). We have two variations to choose from, but we can see that Variation 2 will not fit in the remaining space because it requires two empty squares above the base of the T, and there is only one available. Variation 3, however, fits perfectly into the remaining space:
+
+```
+🟥🟥🟥🟪
+🟩🟥🟦🟪
+🟩🟦🟦🟪
+🟩🟨🟦🟪
+🟩🟨🟨🟨
+```
+
+So, the correct variation of Tetromino T that fits into the empty squares is:
+
+B. 3

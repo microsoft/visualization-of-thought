@@ -1,0 +1,29 @@
+To navigate from 🏠 to 🏢, we need to find the path that avoids obstacles (🚧) and follows the roads (⬜). Here's the step-by-step navigation:
+
+1. Move down from 🏠 to the end of the continuous road.
+```
+🚧🚧🏠
+🚧🚧⬜
+🏢⬜⬜
+```
+After the move:
+```
+🚧🚧⬜
+🚧🚧🏠
+🏢⬜⬜
+```
+
+2. Move left from the current position to the office 🏢.
+```
+🚧🚧⬜
+🚧🚧🏠
+🏢⬜⬜
+```
+After the move:
+```
+🚧🚧⬜
+🚧🚧⬜
+🏠⬜⬜
+```
+
+The 🏠 has now reached the 🏢, completing the navigation task.

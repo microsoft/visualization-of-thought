@@ -1,0 +1,110 @@
+Let's first map out the grid with the items you've described:
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Where:
+- U = Upright piano
+- N = Snail
+- C = Stretcher
+- A = Ant
+- P = Purse
+- S = Catamaran
+- R = Rugby ball
+- H = Howler monkey
+- D = Dam
+
+You start at the position where the purse is located:
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Then you go left by one step (to the Ant):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Then you go up by one step (to the Rugby ball):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Then you go right by one step (to the Howler monkey):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Then you go right by one step (to the Dam):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+Then you go down by one step (to the Catamaran):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+And finally, you go left by one step (back to the Purse):
+
+```
++---+---+---+
+| R | H | D |
++---+---+---+
+| A | P | S |
++---+---+---+
+| U | N | C |
++---+---+---+
+```
+
+So, after following all the steps, you will find the Purse again.
+
+Answer: Purse

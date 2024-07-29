@@ -1,0 +1,22 @@
+Let's first map out the grid based on the initial information provided:
+
+```
+hamster - solar thermal collector - howler monkey
+indri   - shoal                  - King Charles Spaniel
+rose hip- ski                    - spotted salamander
+```
+
+Now, we start at the position where the ski is located, which is the bottom-middle of the grid. We will follow the instructions step by step:
+
+1. Go right by one step: We move from the ski to the spotted salamander.
+2. Go up by one step: We move from the spotted salamander to the King Charles Spaniel.
+3. Go up by one step: We move from the King Charles Spaniel to the howler monkey.
+4. Go left by one step: We move from the howler monkey to the solar thermal collector.
+5. Go down by one step: We move from the solar thermal collector to the shoal.
+6. Go left by one step: We move from the shoal to the indri.
+7. Go up by one step: We move from the indri to the hamster.
+8. Go right by one step: We move from the hamster to the solar thermal collector.
+
+After following all the steps, we end up at the position of the solar thermal collector.
+
+Answer: solar thermal collector

@@ -1,0 +1,48 @@
+First, let's look at the target rectangle and identify the empty squares (⬜):
+
+```
+🟥🟥🟥🟥
+⬜⬜⬜⬜
+🟦🟦🟦⬜
+🟦🟨⬜⬜
+🟨🟨🟨⬜
+```
+
+We have two polyominoes to fit into this rectangle: Tetromino I (🟩) and Tetromino T (🟪). The Tetromino I can only fit in the second row horizontally because it's a 4-block straight line and that's the only place with 4 consecutive empty squares. Let's place it there:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟦🟦🟦⬜
+🟦🟨⬜⬜
+🟨🟨🟨⬜
+```
+
+Now, we have three empty squares left, which must be filled by the Tetromino T. The Tetromino T has two variations that we can use, but since we cannot rotate or reflect the pieces, we must choose the variation that fits the remaining empty squares as they are.
+
+Let's visualize the two variations of Tetromino T:
+
+Variation 2:
+🟪⬜
+🟪🟪
+🟪⬜
+
+Variation 3:
+⬜🟪
+🟪🟪
+⬜🟪
+
+We can see that Variation 2 of Tetromino T cannot fit into the remaining empty squares because it would require a vertical line of three empty squares, which we do not have. However, Variation 3 of Tetromino T can fit into the remaining empty squares if we place it with the single block on the top right. Let's place Variation 3 into the target rectangle:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟦🟦🟦🟪
+🟦🟨🟪🟪
+🟨🟨🟨🟪
+```
+
+The correct variation of Tetromino T that fits into the remaining empty squares is Variation 3.
+
+The answer is:
+B. 3

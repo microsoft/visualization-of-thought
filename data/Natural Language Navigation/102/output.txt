@@ -1,0 +1,19 @@
+Let's first map out the grid based on the information given:
+
+```
+yawl - nipple - junco
+ant - pinwheel - garbage truck
+cassette player - zucchini - chain-link fence
+```
+
+You start at the bottom-left corner where the cassette player is located. Now, follow the instructions:
+
+1. Go up by one step: You are now at the position of the ant.
+2. Go up by one step: You are now at the position of the yawl.
+3. Go right by one step: You are now at the position of the nipple.
+4. Go right by one step: You are now at the position of the junco.
+5. Go down by one step: You are now at the position of the garbage truck.
+6. Go left by one step: You are now at the position of the pinwheel.
+7. Go left by one step: You are now at the position of the ant.
+
+Answer: You will find an ant.

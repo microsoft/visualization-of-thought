@@ -1,0 +1,71 @@
+Target rectangle with 8 empty squares:
+```
+⬜⬜🟨🟪
+⬜🟨🟨🟪
+⬜🟩🟨🟪
+🟩🟩🟩🟪
+⬜⬜⬜⬜
+```
+Provided polyominoes:
+1. Tetromino L (🟥)
+2. Tetromino I (🟦)
+-------------------------
+All variations for Tetromino L:
+Variation 1 fitting into its bounding box:
+```
+🟥🟥
+🟥⬜
+🟥⬜
+```
+Variation 2 fitting into its bounding box:
+```
+🟥🟥
+⬜🟥
+⬜🟥
+```
+Variation 3 fitting into its bounding box:
+```
+🟥🟥🟥
+⬜⬜🟥
+```
+Variation 4 fitting into its bounding box:
+```
+🟥🟥🟥
+🟥⬜⬜
+```
+Variation 5 fitting into its bounding box:
+```
+⬜🟥
+⬜🟥
+🟥🟥
+```
+Variation 6 fitting into its bounding box:
+```
+🟥⬜
+🟥⬜
+🟥🟥
+```
+Variation 7 fitting into its bounding box:
+```
+🟥⬜⬜
+🟥🟥🟥
+```
+Variation 8 fitting into its bounding box:
+```
+⬜⬜🟥
+🟥🟥🟥
+```
+-------------------------
+All variations for Tetromino I:
+Variation 1 fitting into its bounding box:
+```
+🟦
+🟦
+🟦
+🟦
+```
+Variation 2 fitting into its bounding box:
+```
+🟦🟦🟦🟦
+```
+-------------------------

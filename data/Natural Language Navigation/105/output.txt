@@ -1,0 +1,49 @@
+Let's visualize the grid based on the information given:
+
+```
+Siamese cat - Great Dane - Window shade
+Dobermann - Vine snake - Longhorn beetle
+Seat belt - Agaric - Harmonica
+```
+
+You start at the bottom-left corner where the seat belt is located:
+
+```
+Siamese cat - Great Dane - Window shade
+Dobermann - Vine snake - Longhorn beetle
+*Seat belt* - Agaric - Harmonica
+```
+
+Then you go right by one step, to the agaric:
+
+```
+Siamese cat - Great Dane - Window shade
+Dobermann - Vine snake - Longhorn beetle
+Seat belt - *Agaric* - Harmonica
+```
+
+Then you go up by one step, to the vine snake:
+
+```
+Siamese cat - Great Dane - Window shade
+Dobermann - *Vine snake* - Longhorn beetle
+Seat belt - Agaric - Harmonica
+```
+
+Then you go left by one step, to the Dobermann:
+
+```
+Siamese cat - Great Dane - Window shade
+*Dobermann* - Vine snake - Longhorn beetle
+Seat belt - Agaric - Harmonica
+```
+
+Finally, you go down by one step, which brings you back to the seat belt:
+
+```
+Siamese cat - Great Dane - Window shade
+Dobermann - Vine snake - Longhorn beetle
+*Seat belt* - Agaric - Harmonica
+```
+
+Answer: You will find the seat belt.

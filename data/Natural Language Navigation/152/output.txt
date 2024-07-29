@@ -1,0 +1,24 @@
+Let's first map out the grid with the items as described:
+
+```
+motorboat - Polaroid camera - marmot
+scabbard  - goblet          - pinwheel
+tarantula - pill bottle     - cassette player
+```
+
+You start at the position where the cassette player is located, which is the bottom-right corner of the grid.
+
+Now, follow the instructions step by step:
+
+1. Go down by one step: You can't go down because you're already at the bottom row. So you stay at the cassette player.
+2. Go right by one step: You can't go right because you're already at the rightmost column. So you stay at the cassette player.
+3. Go up by one step: You move to the pinwheel.
+4. Go up by one step: You move to the marmot.
+5. Go right by one step: You can't go right because you're already at the rightmost column. So you stay at the marmot.
+6. Go down by one step: You move to the pinwheel.
+7. Go down by one step: You move to the cassette player.
+8. Go left by one step: You move to the pill bottle.
+
+After following all the steps, you end up at the pill bottle.
+
+Answer: You will find the pill bottle.

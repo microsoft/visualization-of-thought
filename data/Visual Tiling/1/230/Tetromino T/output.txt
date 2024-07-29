@@ -1,0 +1,28 @@
+First, let's look at the empty spaces in the target rectangle and determine where the Tetromino I (🟩) can fit. Since it's a straight line of four blocks, it can only fit horizontally in the second row of the target rectangle. Let's place it there:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟦🟨🟨🟨
+🟦🟦⬜🟨
+🟦⬜⬜⬜
+```
+
+Now, we have three empty squares left, which must be filled by the Tetromino T (🟪). The only way to fit the T shape into the remaining space is to use Variation 1, which has the following shape:
+
+⬜🟪⬜
+🟪🟪🟪
+
+Let's place Variation 1 of the Tetromino T into the remaining empty squares:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟩
+🟦🟨🟨🟨
+🟦🟦🟪🟨
+🟦🟪🟪🟪
+```
+
+As we can see, Variation 1 of the Tetromino T fits perfectly into the remaining space without overlapping any existing polyominoes or going outside the rectangle. Therefore, the correct variation of Tetromino T is:
+
+A. 1

@@ -1,0 +1,73 @@
+Let's visualize the grid based on the information given:
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - computer mouse - Irish Terrier
+vending machine - radio - church
+```
+
+You start at the position where the tank is located:
+
+```
+harmonica - horizontal bar - hoop skirt
+TANK      - computer mouse - Irish Terrier
+vending machine - radio - church
+```
+
+Then you go right by one step (to the computer mouse):
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - COMPUTER MOUSE - Irish Terrier
+vending machine - radio - church
+```
+
+Then you go down by one step (to the radio):
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - computer mouse - Irish Terrier
+vending machine - RADIO - church
+```
+
+Then you go right by one step (to the church):
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - computer mouse - Irish Terrier
+vending machine - radio - CHURCH
+```
+
+Then you go up by one step (to the Irish Terrier):
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - computer mouse - IRISH TERRIER
+vending machine - radio - church
+```
+
+Then you go up by one step (to the hoop skirt):
+
+```
+harmonica - horizontal bar - HOOP SKIRT
+tank      - computer mouse - Irish Terrier
+vending machine - radio - church
+```
+
+Then you go left by one step (to the horizontal bar):
+
+```
+harmonica - HORIZONTAL BAR - hoop skirt
+tank      - computer mouse - Irish Terrier
+vending machine - radio - church
+```
+
+And finally, you go down by one step, which brings you to the computer mouse:
+
+```
+harmonica - horizontal bar - hoop skirt
+tank      - COMPUTER MOUSE - Irish Terrier
+vending machine - radio - church
+```
+
+Answer: You will find a computer mouse.

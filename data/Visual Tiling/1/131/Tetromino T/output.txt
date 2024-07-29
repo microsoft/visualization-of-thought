@@ -1,0 +1,45 @@
+First, let's look at the target rectangle and identify the empty squares (⬜):
+
+```
+⬜⬜⬜⬜
+🟩🟩⬜🟪
+🟩⬜⬜🟪
+🟩🟦⬜🟪
+🟦🟦🟦🟪
+```
+
+We have a total of 8 empty squares to fill with the Tetromino I (🟥) and Tetromino T (🟨). Since Tetromino I occupies 4 squares, it can only fit in a straight line either horizontally or vertically. We can see that there is only one place where Tetromino I can fit in its Variation 2 (horizontal):
+
+```
+🟥🟥🟥🟥
+🟩🟩⬜🟪
+🟩⬜⬜🟪
+🟩🟦⬜🟪
+🟦🟦🟦🟪
+```
+
+Now, we have 4 empty squares left to fit the Tetromino T. Let's look at the variations of Tetromino T:
+
+Variation 2:
+🟨⬜
+🟨🟨
+🟨⬜
+
+Variation 3:
+⬜🟨
+🟨🟨
+⬜🟨
+
+We need to fit Tetromino T into the remaining empty squares. Variation 2 of Tetromino T cannot fit because it would require two empty squares on top of each other, which we do not have. Variation 3 of Tetromino T, however, can fit vertically into the remaining space:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟨🟪
+🟩🟨🟨🟪
+🟩🟦🟨🟪
+🟦🟦🟦🟪
+```
+
+So, the correct variation of Tetromino T that fits into the empty squares is:
+
+B. 3

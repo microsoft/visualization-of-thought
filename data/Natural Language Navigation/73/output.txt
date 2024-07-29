@@ -1,0 +1,16 @@
+Let's visualize the grid based on the information given:
+
+```
+Rottweiler - Corkscrew - Standard Schnauzer
+Warthog - Fire Salamander - Hammer
+Chainsaw - Hand-held Computer - Traffic Sign
+```
+
+You start at the position where the hand-held computer is located, which is at the bottom center of the grid.
+
+1. You go up by one step: You move from the hand-held computer to the fire salamander.
+2. You go right by one step: You move from the fire salamander to the hammer.
+3. You go down by one step: You move from the hammer to the traffic sign.
+4. You go left by one step: You move from the traffic sign back to the hand-held computer.
+
+Answer: After following the steps, you will find the hand-held computer.

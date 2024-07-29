@@ -1,0 +1,26 @@
+Let's visualize the grid based on the information given:
+
+```
++-----------------+-----------------+-----------------+
+| Academic Gown   | American Coot   | Albatross       |
++-----------------+-----------------+-----------------+
+| Bathtub         | Treeing Walker  | Waste Container |
+|                 | Coonhound       |                 |
++-----------------+-----------------+-----------------+
+| Killer Whale    | Traffic Light   | King Penguin    |
++-----------------+-----------------+-----------------+
+```
+
+Now, let's follow the instructions given:
+
+1. Start at the position where the Killer Whale is located (bottom-left corner).
+2. Go right by one step: You will find the Traffic Light.
+3. Go up by one step: You will find the Treeing Walker Coonhound.
+4. Go up by one step: You will find the American Coot.
+5. Go left by one step: You will find the Academic Gown.
+6. Go down by one step: You will find the Bathtub.
+7. Go down by one step: You will find the Killer Whale again.
+
+So, after following all the steps, you will end up back at the starting position where the Killer Whale is located.
+
+Answer: Killer Whale

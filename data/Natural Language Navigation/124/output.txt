@@ -1,0 +1,22 @@
+Let's first map out the grid based on the initial instructions:
+
+```
+langur - Bluetick Coonhound - grey wolf
+dowitcher - bulletproof vest - pier
+half-track - plate - promontory
+```
+
+You start at the position where the plate is located, which is the bottom-middle of the grid. Now, follow the instructions:
+
+1. Go right by one step: You move from the plate to the promontory.
+2. Go up by one step: You move from the promontory to the pier.
+3. Go up by one step: You move from the pier to the Bluetick Coonhound.
+4. Go left by one step: You move from the Bluetick Coonhound to the langur.
+5. Go left by one step: You move from the langur to the dowitcher.
+6. Go down by one step: You move from the dowitcher to the bulletproof vest.
+7. Go down by one step: You move from the bulletproof vest to the half-track.
+8. Go right by one step: You move from the half-track to the plate.
+
+After following all the steps, you end up at the plate again.
+
+Answer: You will find a plate.

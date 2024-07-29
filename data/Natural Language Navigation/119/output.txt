@@ -1,0 +1,24 @@
+Let's first map out the grid based on the initial information provided:
+
+```
+sturgeon - upright piano - Schipperke
+lipstick - sunscreen - American Staffordshire Terrier
+forklift - bathtub - spindle
+```
+
+You start at the position where the lipstick is located, which is the top-left corner of the grid.
+
+Now, follow the instructions:
+
+1. Go up by one step: You can't move up because you're already at the top row.
+2. Go right by one step: You move from the lipstick to the sunscreen.
+3. Go right by one step: You move from the sunscreen to the American Staffordshire Terrier.
+4. Go down by one step: You move from the American Staffordshire Terrier to the spindle.
+5. Go down by one step: You can't move down because you're already at the bottom row.
+6. Go left by one step: You move from the spindle to the bathtub.
+7. Go left by one step: You move from the bathtub to the forklift.
+8. Go up by one step: You move from the forklift to the lipstick.
+
+After following all the steps, you end up back at the lipstick.
+
+Answer: You will find a lipstick.

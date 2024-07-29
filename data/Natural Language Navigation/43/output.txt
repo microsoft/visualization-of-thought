@@ -1,0 +1,22 @@
+Let's first map out the items on the 3x3 grid based on the given instructions:
+
+```
+eggnog - king penguin - rock beauty
+broom - power drill - red panda
+rose hip - ruler - aircraft carrier
+```
+
+You start at the position where the power drill is located, which is the center of the grid.
+
+1. Go up by one step: You move from the power drill to the king penguin.
+2. Go left by one step: You move from the king penguin to the eggnog.
+3. Go down by one step: You move from the eggnog to the broom.
+4. Go down by one step: You move from the broom to the rose hip.
+5. Go right by one step: You move from the rose hip to the ruler.
+6. Go right by one step: You move from the ruler to the aircraft carrier.
+7. Go up by one step: You move from the aircraft carrier to the red panda.
+8. Go up by one step: You move from the red panda to the rock beauty.
+
+After following these steps, you will find the rock beauty.
+
+Answer: rock beauty

@@ -1,0 +1,13 @@
+Let's follow the instructions step by step, starting from the bottom-left corner where the bassoon is located:
+
+1. Go right by one step: You find a necklace.
+2. Go right by one step: You find a wardrobe.
+3. Go up by one step: You find a crane (machine).
+4. Go up by one step: You find an indri.
+5. Go left by one step: You find a coil.
+6. Go down by one step: You find a semi-trailer truck.
+7. Go down by one step: You find a necklace.
+
+After following all the steps, you end up at the position where the necklace is located.
+
+Answer: You will find a necklace.

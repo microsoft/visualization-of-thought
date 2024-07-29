@@ -1,0 +1,28 @@
+First, let's look at the empty spaces in the target rectangle. We have a column of three empty squares on the left side and a row of four empty squares at the bottom. The Tetromino I can either fill four squares in a row or four squares in a column. The Tetromino L can fill an L shape with three squares in a column and two in a row.
+
+Given the shape of the empty spaces, the Tetromino I must be placed horizontally to fill the bottom row of four empty squares, as that's the only way it can fit without overlapping or going outside the rectangle. This means we will use Variation 2 of the Tetromino I.
+
+Now let's visualize the state after placing Variation 2 of the Tetromino I:
+
+```
+🟥🟦🟦🟦
+🟥⬜🟦🟪
+🟥⬜🟪🟪
+🟥⬜⬜🟪
+🟩🟩🟩🟩
+```
+
+Next, we need to place the Tetromino L. The only remaining empty spaces form an L shape that matches Variation 5 or Variation 6 of the Tetromino L. Since we are not allowed to rotate or reflect the polyominoes, we must choose the variation that fits the L shape as it is presented in the target rectangle.
+
+Variation 5 of the Tetromino L fits perfectly into the remaining empty spaces:
+
+```
+🟥🟦🟦🟦
+🟥🟨🟦🟪
+🟥🟨🟪🟪
+🟥🟨🟨🟪
+🟩🟩🟩🟩
+```
+
+So, the correct variation of Tetromino I that fits into the target rectangle is:
+B. 2

@@ -1,0 +1,53 @@
+Let's start by placing the Tetromino I (🟩) since it has the least flexibility in terms of placement due to its straight shape. We can see that it can only fit in the two vertical columns on the left side of the rectangle. Let's place it there:
+
+```
+🟥🟥🟥🟥
+🟩⬜⬜⬜
+🟩⬜⬜⬜
+🟩⬜🟨⬜
+🟩🟨🟨🟨
+```
+
+Next, let's look at the Tetromino L (🟪). We have two variations to choose from, but we can see that Variation 6 will not fit anywhere in the remaining space without overlapping the existing 🟨 polyomino or going outside the rectangle. So we must use Variation 1 of Tetromino L:
+
+```
+🟥🟥🟥🟥
+🟩🟪🟪⬜
+🟩🟪⬜⬜
+🟩🟪🟨⬜
+🟩🟨🟨🟨
+```
+
+Now we have a space that is three squares high and one square wide, which is a perfect fit for Variation 3 of Tetromino T (🟦). Let's place it:
+
+```
+🟥🟥🟥🟥
+🟩🟪🟪⬜
+🟩🟪🟦⬜
+🟩🟪🟨🟦
+🟩🟨🟨🟨
+```
+
+Finally, we can place the remaining square with the Tetromino T Variation 3:
+
+```
+🟥🟥🟥🟥
+🟩🟪🟪🟦
+🟩🟪🟦⬜
+🟩🟪🟨🟦
+🟩🟨🟨🟨
+```
+
+The correct variation of Tetromino T to fit into the remaining space is:
+
+A. 3
+
+The final configuration is:
+
+```
+🟥🟥🟥🟥
+🟩🟪🟪🟦
+🟩🟪🟦🟦
+🟩🟪🟨🟦
+🟩🟨🟨🟨
+```

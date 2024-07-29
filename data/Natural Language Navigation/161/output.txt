@@ -1,0 +1,51 @@
+Let's visualize the grid based on the information given:
+
+```
+Flagpole - Griffon Bruxellois - Paper towel
+Bustard - Arctic fox - Pickup truck
+Harvestman - Macaque - Confectionery store
+```
+
+You start at the bottom-left corner where the harvestman is located:
+
+```
+- - -
+- - -
+H - -
+```
+
+Then you go up by one step:
+
+```
+- - -
+H - -
+- - -
+```
+
+Then you go right by one step:
+
+```
+- - -
+- H -
+- - -
+```
+
+Then you go down by one step:
+
+```
+- - -
+- - -
+- H -
+```
+
+And then you go left by one step:
+
+```
+- - -
+- - -
+H - -
+```
+
+You end up back at the starting position, where the harvestman is located.
+
+Answer: You will find a harvestman.

@@ -1,0 +1,27 @@
+First, let's look at the empty spaces in the target rectangle and the variations of the polyominoes we have to work with. We need to fit a Tetromino T and a Tetromino I into the empty spaces without overlapping or going outside the rectangle.
+
+The Tetromino I can either be placed vertically (Variation 1) or horizontally (Variation 2). Since there is a single row of 4 empty squares at the bottom of the rectangle, it's clear that the Tetromino I (🟨) must be placed horizontally to fill that row. Let's do that first:
+
+```
+🟥🟥🟥🟪
+🟥⬜🟪🟪
+⬜⬜⬜🟪
+🟦🟦🟦🟦
+🟨🟨🟨🟨
+```
+
+Now, we have to place the Tetromino T (🟩). There are two variations, but we can see that Variation 4 of Tetromino T cannot fit into the remaining empty spaces because it would require two empty squares above or below the center square of the T, which is not available. Therefore, we must use Variation 1 of Tetromino T.
+
+Let's place Variation 1 of Tetromino T into the remaining empty squares:
+
+```
+🟥🟥🟥🟪
+🟥🟩🟪🟪
+🟩🟩🟩🟪
+🟦🟦🟦🟦
+🟨🟨🟨🟨
+```
+
+As we can see, Variation 1 of Tetromino T fits perfectly into the remaining empty spaces. The correct variation of Tetromino T is:
+
+A. 1

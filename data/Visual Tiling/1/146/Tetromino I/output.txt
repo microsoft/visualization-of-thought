@@ -1,0 +1,35 @@
+Let's start by examining the empty spaces in the target rectangle and the provided polyominoes. We need to fit the Tetromino I and Tetromino T into the empty spaces without overlapping any existing polyominoes or going outside the rectangle.
+
+The target rectangle with 8 empty squares looks like this:
+```
+⬜⬜⬜⬜
+🟩🟦🟪🟪
+🟩🟦🟦🟪
+🟩🟦⬜🟪
+🟩⬜⬜⬜
+```
+
+We have two variations of Tetromino I (🟥) and two variations of Tetromino T (🟨).
+
+Let's first try to fit the Tetromino T, since it has a unique shape that can only fit in certain ways. Looking at the empty spaces, we can see that the Tetromino T can only fit in the bottom left corner, using Variation 1:
+
+```
+⬜⬜⬜⬜
+🟩🟦🟪🟪
+🟩🟦🟦🟪
+🟩🟦🟨🟪
+🟩🟨🟨🟨
+```
+
+Now, we have a 4x1 space left at the top, which perfectly fits Variation 2 of Tetromino I:
+
+```
+🟥🟥🟥🟥
+🟩🟦🟪🟪
+🟩🟦🟦🟪
+🟩🟦🟨🟪
+🟩🟨🟨🟨
+```
+
+So, the correct variation of Tetromino I that fits into the empty squares is:
+B. 2

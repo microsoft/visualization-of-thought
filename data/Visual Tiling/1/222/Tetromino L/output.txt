@@ -1,0 +1,49 @@
+First, let's look at the target rectangle and identify the empty squares (⬜):
+
+```
+🟥🟦🟦🟦
+🟥🟨🟦⬜
+🟥🟨🟨⬜
+🟥🟨⬜⬜
+⬜⬜⬜⬜
+```
+
+We have a total of 8 empty squares to fill with the Tetromino I (🟩) and Tetromino L (🟪). Since the Tetromino I occupies 4 squares and the Tetromino L also occupies 4 squares, they will perfectly fill the empty spaces.
+
+Let's start with the Tetromino I (🟩), as it has only two variations and is simpler to place. We can see that the only way to place the Tetromino I without rotating or reflecting it is to use Variation 2, which is horizontal, because there is no vertical space of 4 empty squares. Placing the Tetromino I in the bottom row:
+
+```
+🟥🟦🟦🟦
+🟥🟨🟦⬜
+🟥🟨🟨⬜
+🟥🟨⬜⬜
+🟩🟩🟩🟩
+```
+
+Now, we have to place the Tetromino L (🟪). We have two variations to choose from, and we need to fit it into the remaining 4 empty squares. Let's visualize each variation to see which one fits:
+
+Variation 2:
+🟪🟪
+⬜🟪
+⬜🟪
+
+Variation 5:
+⬜🟪
+⬜🟪
+🟪🟪
+
+We can see that Variation 2 of Tetromino L cannot fit into the remaining space because it would require two empty squares to be on top of each other, which is not the case. However, Variation 5 can fit perfectly into the remaining space, with the single square of the L going into the single empty square on the third row and the bottom part of the L filling the remaining three squares on the fourth row.
+
+Let's place Variation 5 of Tetromino L into the target rectangle:
+
+```
+🟥🟦🟦🟦
+🟥🟨🟦🟪
+🟥🟨🟨🟪
+🟥🟨🟪🟪
+🟩🟩🟩🟩
+```
+
+The correct variation of Tetromino L to fit into the empty squares is:
+
+B. 5

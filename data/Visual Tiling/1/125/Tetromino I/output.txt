@@ -1,0 +1,58 @@
+First, let's look at the target rectangle and identify the empty squares (⬜):
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦⬜🟪
+🟥⬜⬜⬜
+⬜⬜⬜⬜
+```
+
+We have 8 empty squares to fill with the Tetromino I (🟩) and Tetromino T (🟨). The Tetromino I occupies 4 squares, and the Tetromino T also occupies 4 squares.
+
+Let's consider the variations for Tetromino I:
+
+Variation 1 (Vertical):
+🟩
+🟩
+🟩
+🟩
+
+Variation 2 (Horizontal):
+🟩🟩🟩🟩
+
+Now, let's consider the variations for Tetromino T:
+
+Variation 1:
+⬜🟨⬜
+🟨🟨🟨
+
+Variation 4:
+🟨🟨🟨
+⬜🟨⬜
+
+We can immediately see that Variation 1 of Tetromino I (vertical) cannot fit into the rectangle without overlapping existing polyominoes or going outside the rectangle. There is no vertical space of 4 empty squares.
+
+Variation 2 of Tetromino I (horizontal) can fit into the bottom row of the rectangle, which has exactly 4 empty squares in a row:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦⬜🟪
+🟥⬜⬜⬜
+🟩🟩🟩🟩
+```
+
+Now, we have 4 empty squares left in a T-shape, which perfectly matches either Variation 1 or Variation 4 of Tetromino T. We can place the Tetromino T in the remaining space:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+The correct variation of Tetromino I that fits into the target rectangle is:
+
+B. 2 (Horizontal)

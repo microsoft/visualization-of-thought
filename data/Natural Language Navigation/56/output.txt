@@ -1,0 +1,26 @@
+Let's visualize the grid based on the information given:
+
+```
++---+---+---+
+| B | S | I |
++---+---+---+
+| O | P | T |
++---+---+---+
+| M | S | T |
++---+---+---+
+```
+
+Where:
+- M = Meerkat
+- S = Soda bottle
+- T = Tub
+- P = Petri dish
+- O = Oystercatcher
+- S = Scottish Terrier
+- B = Birdhouse
+- S = Staffordshire Bull Terrier
+- I = Indigo bunting
+
+You start at the position where the meerkat is located (bottom-left corner). Then you go up by one step, which brings you to the oystercatcher. After that, you go down by one step, which brings you back to the meerkat.
+
+Answer: You will find a meerkat.

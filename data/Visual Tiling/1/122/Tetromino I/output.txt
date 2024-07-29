@@ -1,0 +1,37 @@
+First, let's look at the target rectangle and identify the empty squares (⬜) where we need to fit the polyominoes:
+
+```
+⬜🟦🟦🟪
+⬜🟦🟪🟪
+⬜🟦⬜🟪
+⬜⬜⬜⬜
+🟩🟩🟩🟩
+```
+
+We have two polyominoes to fit into this rectangle: Tetromino I (🟥) and Tetromino T (🟨). The Tetromino I can be placed either vertically (Variation 1) or horizontally (Variation 2), and the Tetromino T has two variations provided, but we only need to use one.
+
+Let's start with the Tetromino I. We need to find a place where we can fit either a vertical or horizontal line of four squares. Looking at the target rectangle, we can see that there is no place to fit a horizontal line of four squares (Variation 2), because the maximum horizontal space available is three squares wide. Therefore, we must use Variation 1 of the Tetromino I, which is vertical.
+
+Let's place the Tetromino I (Variation 1) in the leftmost column, where there are four empty squares in a vertical line:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦⬜🟪
+🟥⬜⬜⬜
+🟩🟩🟩🟩
+```
+
+Now we have to fit the Tetromino T. We can see that there is a perfect spot for it in the bottom right corner, where it can fit without overlapping any existing polyominoes or going outside the rectangle. We can use Variation 1 of the Tetromino T, which fits perfectly:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+The correct variation of Tetromino I that fits into the target rectangle is:
+
+A. 1

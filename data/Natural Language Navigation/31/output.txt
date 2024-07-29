@@ -1,0 +1,75 @@
+Let's first map out the grid with the items you've described:
+
+```
+Lawn mower - Triceratops - Cardigan Welsh Corgi
+Bib - Armadillo - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+You start at the position of the howler monkey:
+
+```
+Lawn mower - Triceratops - Cardigan Welsh Corgi
+Bib - Armadillo - Table lamp
+Overskirt - [Howler monkey] - Chameleon
+```
+
+Then you go up by one step:
+
+```
+Lawn mower - Triceratops - Cardigan Welsh Corgi
+Bib - [Armadillo] - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+Then you go left by one step:
+
+```
+Lawn mower - Triceratops - Cardigan Welsh Corgi
+[Bib] - Armadillo - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+Then you go up by one step:
+
+```
+[Bib] - Triceratops - Cardigan Welsh Corgi
+Lawn mower - Armadillo - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+Then you go right by one step:
+
+```
+Bib - [Triceratops] - Cardigan Welsh Corgi
+Lawn mower - Armadillo - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+Then you go right by one step:
+
+```
+Bib - Triceratops - [Cardigan Welsh Corgi]
+Lawn mower - Armadillo - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+Then you go down by one step:
+
+```
+Bib - Triceratops - Cardigan Welsh Corgi
+Lawn mower - Armadillo - [Table lamp]
+Overskirt - Howler monkey - Chameleon
+```
+
+And finally, you go left by one step:
+
+```
+Bib - Triceratops - Cardigan Welsh Corgi
+Lawn mower - [Armadillo] - Table lamp
+Overskirt - Howler monkey - Chameleon
+```
+
+So, after following all the steps, you will find an armadillo.
+
+Answer: Armadillo

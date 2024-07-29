@@ -1,0 +1,49 @@
+First, let's look at the empty spaces in the target rectangle and the variations of the Tetromino I (🟪), since it's the simpler of the two polyominoes with only two variations: a vertical line and a horizontal line.
+
+The target rectangle with 8 empty squares is:
+```
+🟥🟥🟥🟥
+🟩🟩🟩⬜
+⬜🟩🟨⬜
+⬜🟨🟨⬜
+⬜⬜🟨⬜
+```
+
+We can see that there is no place where a horizontal Tetromino I (Variation 2) can fit because there is no row with four consecutive empty squares. Therefore, we must use the vertical Tetromino I (Variation 1).
+
+Let's place the vertical Tetromino I (🟪) in the only possible position:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+⬜🟩🟨🟪
+⬜🟨🟨🟪
+⬜⬜🟨🟪
+```
+
+Now, we have the following empty spaces left for the Tetromino L (🟦):
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟦🟩🟨🟪
+🟦🟨🟨🟪
+🟦🟦🟨🟪
+```
+
+We can see that the only way to fit the Tetromino L (🟦) without overlapping or going outside the rectangle is to use Variation 6, which looks like this:
+🟦⬜
+🟦⬜
+🟦🟦
+
+So, the correct variation of Tetromino L to fit into the empty squares is:
+B. 6
+
+The final configuration would be:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟦🟩🟨🟪
+🟦🟨🟨🟪
+🟦🟦🟨🟪
+```
+
+This completes the task with all polyominoes fitting into the target rectangle without overlapping or going outside the rectangle.

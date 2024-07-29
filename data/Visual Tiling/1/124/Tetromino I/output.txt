@@ -1,0 +1,70 @@
+First, let's look at the target rectangle and identify the empty squares (⬜):
+
+```
+🟥⬜⬜🟪
+🟥⬜🟪🟪
+🟥⬜🟨🟪
+🟥🟨🟨🟨
+⬜⬜⬜⬜
+```
+
+We have two polyominoes to fit into this rectangle: Tetromino I (🟩) and Tetromino L (🟦). We need to determine which variation of Tetromino I will fit.
+
+Let's start by trying to fit the Tetromino I variations:
+
+Variation 1 (Vertical):
+🟩
+🟩
+🟩
+🟩
+
+Variation 2 (Horizontal):
+🟩🟩🟩🟩
+
+We can see that Variation 1 (Vertical) will not fit into the rectangle because there is no vertical space of 4 empty squares. However, Variation 2 (Horizontal) can fit into the bottom row of the rectangle, which has 4 consecutive empty squares.
+
+Let's place Variation 2 of Tetromino I into the rectangle:
+
+```
+🟥⬜⬜🟪
+🟥⬜🟪🟪
+🟥⬜🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+Now, we need to fit Tetromino L into the remaining empty squares. We have two variations of Tetromino L:
+
+Variation 1:
+🟦🟦
+🟦⬜
+🟦⬜
+
+Variation 2:
+🟦🟦
+⬜🟦
+⬜🟦
+
+We can see that Variation 1 of Tetromino L can fit into the remaining empty squares on the left side of the rectangle:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+And the final square can be filled with the remaining part of Tetromino L:
+
+```
+🟥🟦🟦🟪
+🟥🟦🟪🟪
+🟥🟦🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+The correct variation of Tetromino I that fits into the target rectangle is:
+
+B. 2

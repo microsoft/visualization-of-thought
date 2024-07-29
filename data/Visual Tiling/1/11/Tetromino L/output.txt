@@ -1,0 +1,37 @@
+First, let's look at the target rectangle and identify the empty squares (⬜) where we need to fit the polyominoes:
+
+```
+⬜⬜⬜⬜
+🟩🟩🟩🟪
+🟦🟩⬜🟪
+🟦🟦⬜🟪
+🟦⬜⬜🟪
+```
+
+We have two types of polyominoes to fit into this rectangle: Tetromino I (🟥) and Tetromino L (🟨). We need to use one of each to fill the empty squares.
+
+Let's start with the Tetromino I (🟥), which has two variations. Since there are four empty squares in a row at the top of the rectangle, we can use Variation 2 of Tetromino I to fill those squares:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟦🟩⬜🟪
+🟦🟦⬜🟪
+🟦⬜⬜🟪
+```
+
+Now, we have three empty squares left to fill with the Tetromino L (🟨). We can see that the remaining empty squares form an 'L' shape, which matches the shape of the Tetromino L. We have two variations of Tetromino L to choose from, Variation 5 and Variation 6.
+
+Let's try Variation 5:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟦🟩🟨🟪
+🟦🟦🟨🟪
+🟦🟨🟨🟪
+```
+
+As we can see, Variation 5 of Tetromino L fits perfectly into the remaining empty squares. Therefore, the correct variation of Tetromino L to use is:
+
+A. 5

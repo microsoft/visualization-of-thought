@@ -1,0 +1,24 @@
+Starting from 🏠, here are the steps to navigate to 🏢:
+
+1. Move right to the end of the continuous road.
+```
+🏢⬜⬜
+🚧🚧⬜
+🏠🚶⬜
+```
+
+2. Move up to the end of the continuous road.
+```
+🏢⬜🚶
+🚧🚧⬜
+🏠⬜⬜
+```
+
+3. Move left to reach the destination 🏢.
+```
+🏢🚶⬜
+🚧🚧⬜
+🏠⬜⬜
+```
+
+You have now arrived at the office 🏢.

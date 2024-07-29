@@ -1,0 +1,39 @@
+First, let's look at the empty spaces in the target rectangle and determine where each polyomino could fit. We have a Tetromino I (🟩) and a Tetromino L (🟪) to place.
+
+The Tetromino I can only fit in the bottom row since it's the only place with four consecutive empty squares (⬜⬜⬜⬜). We'll use Variation 2 of the Tetromino I to fill this space.
+
+After placing the Tetromino I, the target rectangle looks like this:
+```
+🟥🟦⬜⬜
+🟥🟦🟦⬜
+🟥🟦🟨⬜
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+Now we have three empty squares left to fill with the Tetromino L. The remaining empty squares form an L-shape, which matches the shape of our Tetromino L. However, we need to determine which variation fits.
+
+Let's try Variation 1 of the Tetromino L:
+🟪🟪
+🟪⬜
+🟪⬜
+This variation cannot fit because it would require an empty square below the two consecutive empty squares on the second row, which is not available.
+
+Now let's try Variation 2 of the Tetromino L:
+🟪🟪
+⬜🟪
+⬜🟪
+This variation can fit because it matches the L-shape of the remaining empty squares.
+
+Placing Variation 2 of the Tetromino L into the target rectangle, we get:
+```
+🟥🟦🟪🟪
+🟥🟦🟦🟪
+🟥🟦🟨🟪
+🟥🟨🟨🟨
+🟩🟩🟩🟩
+```
+
+All the empty squares are now filled without overlapping any existing polyominoes or going outside the rectangle. The correct variation of Tetromino L is:
+
+B. 2

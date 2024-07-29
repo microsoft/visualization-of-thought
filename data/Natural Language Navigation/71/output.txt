@@ -1,0 +1,11 @@
+Let's follow the instructions step by step, starting from the bottom-left corner where the weighing scale is located:
+
+1. Go right by one step: You find a lipstick.
+2. Go right by one step: You find a table lamp.
+3. Go up by one step: You find a brown bear.
+4. Go up by one step: You find an American alligator.
+5. Go left by one step: You find a slug.
+6. Go down by one step: You find a pill bottle.
+7. Go right by one step: You find a brown bear.
+
+Answer: You will find a brown bear.

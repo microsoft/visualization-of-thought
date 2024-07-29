@@ -1,0 +1,37 @@
+Starting from 🏠, here are the steps to navigate to 🏢:
+
+1. Move up to the first ⬜ above 🏠.
+2. Move right to the ⬜ next to the first ⬜.
+3. Move up to reach 🏢.
+
+Visualizing each step:
+
+Starting map:
+```
+⬜⬜🏢
+⬜🚧🚧
+🏠🚧🚧
+```
+
+After step 1:
+```
+⬜⬜🏢
+🏠🚧🚧
+⬜🚧🚧
+```
+
+After step 2:
+```
+⬜⬜🏢
+⬜🏠🚧
+⬜🚧🚧
+```
+
+After step 3:
+```
+⬜🏠🏢
+⬜🚧🚧
+⬜🚧🚧
+```
+
+You have now reached the office 🏢.

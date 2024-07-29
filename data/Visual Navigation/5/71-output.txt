@@ -1,0 +1,66 @@
+To navigate from 🏠 to 🏢, we need to find the path that avoids the 🚧 obstacles and reaches the destination. Let's start by analyzing the map and planning our route step by step.
+
+Initial map:
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜⬜⬜🚧⬜⬜🏢
+```
+
+Step 1: Move right from 🏠 to the end of the continuous road.
+```
+🏠🚧🚶⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜⬜⬜🚧⬜⬜🏢
+```
+
+Step 2: Move down to the bottom row.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜🚶⬜🚧⬜⬜🏢
+```
+
+Step 3: Move right to the end of the continuous road, just before the obstacle.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜⬜🚶🚧⬜⬜🏢
+```
+
+Step 4: Move up to the middle row.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧🚶🚧⬜🚧🚧
+⬜⬜⬜🚧⬜⬜🏢
+```
+
+Step 5: Move right to the end of the continuous road, just before the obstacle.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧🚶🚧🚧
+⬜⬜⬜🚧⬜⬜🏢
+```
+
+Step 6: Move down to the bottom row, which is the row with the 🏢.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜⬜⬜🚧🚶⬜🏢
+```
+
+Step 7: Move right to reach the 🏢.
+```
+🏠🚧⬜⬜⬜🚧🚧
+⬜🚧⬜🚧⬜🚧🚧
+⬜⬜⬜🚧⬜🚶🏢
+```
+
+The steps to navigate from 🏠 to 🏢 are:
+1. Move right 3 times.
+2. Move down 2 times.
+3. Move right 1 time.
+4. Move up 1 time.
+5. Move right 1 time.
+6. Move down 1 time.
+7. Move right 1 time to reach the office 🏢.

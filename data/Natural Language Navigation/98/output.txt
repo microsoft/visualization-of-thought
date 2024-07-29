@@ -1,0 +1,99 @@
+Let's visualize the grid based on the items you've described:
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+You start at the bottom-left corner where the Gas Mask is located:
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | Cheetah  | Snorkel |
++-------------------+
+| *Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+Then you go up by one step (to the Sloth):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| *Sloth    | Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+Then you go right by one step (to the Cheetah):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | *Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+Then you go down by one step (to the Burrito):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | *Burrito  | Drill   |
++-------------------+
+```
+
+Then you go right by one step (to the Drill):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | Burrito  | *Drill   |
++-------------------+
+```
+
+Then you go up by one step (to the Snorkel):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | Cheetah  | *Snorkel |
++-------------------+
+| Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+Finally, you go left by one step (to the Cheetah):
+
+```
++-------------------+
+| Keyboard | Chestnut | Cricket |
++-------------------+
+| Sloth    | *Cheetah  | Snorkel |
++-------------------+
+| Gas Mask | Burrito  | Drill   |
++-------------------+
+```
+
+So, after following the given steps, you will find the Cheetah.
+
+Answer: Cheetah

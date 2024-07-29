@@ -1,0 +1,16 @@
+Let's visualize the grid based on the information given:
+
+```
+Cabbage - Poke bonnet - Gorilla
+Great grey owl - Garbage truck - Bib
+Carousel - Common squirrel monkey - Tiger beetle
+```
+
+You start at the position where the common squirrel monkey is located, which is the bottom-middle of the grid.
+
+1. You go left by one step: You are now at the position of the carousel (bottom-left).
+2. You go up by one step: You are now at the position of the great grey owl (middle-left).
+3. You go right by one step: You are now at the position of the garbage truck (middle-center).
+4. You go down by one step: You are now at the position of the common squirrel monkey again (bottom-middle).
+
+Answer: You will find the common squirrel monkey.

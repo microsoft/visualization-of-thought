@@ -1,0 +1,18 @@
+Let's first map out the items on the 3x3 grid based on the initial instructions:
+
+```
+breastplate - lionfish - potter's wheel
+pelican     - soap dispenser - English Springer Spaniel
+megalith    - tennis ball - hoop skirt
+```
+
+Now, let's follow the instructions from the position of the tennis ball:
+
+1. Start at the tennis ball.
+2. Go up by one step: You arrive at the soap dispenser.
+3. Go left by one step: You arrive at the pelican.
+4. Go up by one step: You arrive at the breastplate.
+5. Go right by one step: You arrive at the lionfish.
+6. Go down by one step: You arrive at the soap dispenser again.
+
+Answer: You will find a soap dispenser.

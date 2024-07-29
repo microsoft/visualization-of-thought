@@ -1,0 +1,48 @@
+Let's start by examining the target rectangle and the provided polyominoes. We need to fit Tetromino T, Tetromino L, and Tetromino I into the empty squares without overlapping any existing polyominoes or going outside the rectangle.
+
+Target rectangle with 12 empty squares:
+```
+🟥🟥🟥🟥
+⬜⬜⬜⬜
+🟦⬜⬜⬜
+🟦🟦⬜⬜
+🟦⬜⬜⬜
+```
+
+We have two variations for Tetromino T, two for Tetromino L, and two for Tetromino I. Let's try to fit the Tetromino I first, as it has the simplest shape and can only fit in one way due to the constraints of the rectangle.
+
+Variation 1 of Tetromino I (🟪) can fit vertically in the second column from the right, filling up the four empty squares there. Let's place it and see how the rectangle looks:
+
+```
+🟥🟥🟥🟥
+⬜⬜⬜🟪
+🟦⬜⬜🟪
+🟦🟦⬜🟪
+🟦⬜⬜🟪
+```
+
+Now we have 8 empty squares left. Let's try to fit Tetromino L next. Variation 2 of Tetromino L (🟨) can fit in the bottom left corner, and Variation 5 can fit in the top left corner. However, if we place Variation 5 in the top left corner, it will leave a single square gap that cannot be filled by any variation of Tetromino T. Therefore, we must use Variation 2 of Tetromino L in the bottom left corner:
+
+```
+🟥🟥🟥🟥
+⬜⬜⬜🟪
+🟦⬜⬜🟪
+🟦🟦🟨🟪
+🟦🟨🟨🟪
+```
+
+Now we have 4 empty squares left, which is the exact shape and size for Tetromino T. Let's see which variation of Tetromino T can fit into the remaining space.
+
+Variation 3 of Tetromino T (🟩) cannot fit because it would require a vertical space of three squares, and we only have two. However, Variation 4 of Tetromino T (🟩) fits perfectly into the remaining space:
+
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟦🟩⬜🟪
+🟦🟦🟨🟪
+🟦🟨🟨🟪
+```
+
+The correct variation of Tetromino T that fits into the empty squares is:
+
+B. 4

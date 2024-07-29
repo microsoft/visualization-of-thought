@@ -1,0 +1,33 @@
+First, let's look at the target rectangle and identify where the Tetromino I (🟥) can fit. Since it's a straight line of four blocks, it can only fit in the first row or the fourth row, as these are the only places with four consecutive empty squares (⬜).
+
+The Tetromino I (🟥) can be placed in the first row horizontally (Variation 2) like this:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟩⬜🟪🟪
+⬜⬜⬜🟪
+🟨🟨🟨🟨
+```
+
+Now, let's see where the Tetromino T (🟦) can fit. We have two variations to consider, but since we've placed the Tetromino I (🟥) in the first row, the only place left for the Tetromino T (🟦) is in the third and fourth rows, where there are three empty squares in a row and one empty square directly above the middle one.
+
+The Tetromino T (🟦) can only fit in this space with Variation 1, which looks like this:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟩🟦🟪🟪
+⬜🟦⬜🟪
+🟨🟨🟨🟨
+```
+
+Now we can place the remaining part of the Tetromino T (🟦) in the empty squares:
+```
+🟥🟥🟥🟥
+🟩🟩🟩🟪
+🟩🟦🟪🟪
+🟦🟦🟦🟪
+🟨🟨🟨🟨
+```
+
+The correct variation of Tetromino T that fits into the target rectangle is:
+A. 1

@@ -1,0 +1,49 @@
+Let's visualize the grid based on the information given:
+
+```
+American black bear - Aircraft carrier - Carousel
+Langur - Barbershop - Rain barrel
+Lion - Safe - Hammerhead shark
+```
+
+You start at the bottom-left corner where the lion is located:
+
+```
+- - -
+- - -
+L - -
+```
+
+Then you go right by one step, to the safe:
+
+```
+- - -
+- - -
+- S -
+```
+
+Then you go up by one step, to the barbershop:
+
+```
+- - -
+- B -
+- - -
+```
+
+Then you go left by one step, to the langur:
+
+```
+- - -
+L - -
+- - -
+```
+
+Finally, you go down by one step, which brings you back to the lion:
+
+```
+- - -
+- - -
+L - -
+```
+
+Answer: You will find the lion.

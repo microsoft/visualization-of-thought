@@ -1,0 +1,55 @@
+Let's visualize the grid based on the information given:
+
+Starting from the bottom-left corner (flagpole), you move right to find a tabby cat, and then right again to find a chickadee. Then you go up to find a gown, left to find a slip-on shoe, left again to find a Redbone Coonhound. Then you go up to find a tram, right to find a brown bear, and right again to find a chain.
+
+The grid looks like this:
+
+```
+| tram          | brown bear | chain          |
+| slip-on shoe  | gown       | chickadee      |
+| Redbone Coonhound | tabby cat  | flagpole       |
+```
+
+Now, you start at the position where the tabby cat is located:
+
+```
+| tram          | brown bear | chain          |
+| slip-on shoe  | gown       | chickadee      |
+| Redbone Coonhound | **tabby cat**  | flagpole       |
+```
+
+Then you go up by one step:
+
+```
+| tram          | brown bear | chain          |
+| slip-on shoe  | **gown**       | chickadee      |
+| Redbone Coonhound | tabby cat  | flagpole       |
+```
+
+Then you go left by one step:
+
+```
+| tram          | brown bear | chain          |
+| **slip-on shoe**  | gown       | chickadee      |
+| Redbone Coonhound | tabby cat  | flagpole       |
+```
+
+Then you go down by one step:
+
+```
+| tram          | brown bear | chain          |
+| slip-on shoe  | gown       | chickadee      |
+| **Redbone Coonhound** | tabby cat  | flagpole       |
+```
+
+And finally, you go right by one step:
+
+```
+| tram          | brown bear | chain          |
+| slip-on shoe  | gown       | chickadee      |
+| Redbone Coonhound | **tabby cat**  | flagpole       |
+```
+
+You end up back at the position where the tabby cat is located.
+
+Answer: You will find the tabby cat.

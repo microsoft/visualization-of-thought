@@ -1,0 +1,45 @@
+First, let's look at the target rectangle and identify the empty squares:
+
+```
+🟥🟥🟥🟥
+🟩⬜⬜⬜
+🟩🟩🟪⬜
+🟩🟪🟪🟪
+⬜⬜⬜⬜
+```
+
+We have a total of 8 empty squares to fill with the Tetromino I (4 squares) and Tetromino L (4 squares). Since the Tetromino I occupies 4 squares in a straight line, and we have a row and a column with exactly 4 empty squares, it's clear that the Tetromino I must occupy one of these lines.
+
+Let's try placing the Tetromino I in the bottom row first, as it's the only place where Variation 2 of Tetromino I can fit:
+
+```
+🟥🟥🟥🟥
+🟩⬜⬜⬜
+🟩🟩🟪⬜
+🟩🟪🟪🟪
+🟦🟦🟦🟦
+```
+
+Now, we have the remaining empty squares in the second and third rows to fill with the Tetromino L. We can see that only Variation 3 of Tetromino L can fit into the remaining space because it has the 'L' shape that can fill the two empty squares in the second row and extend down to fill the two empty squares in the third row:
+
+```
+🟥🟥🟥🟥
+🟩🟨🟨🟨
+🟩🟩🟪🟨
+🟩🟪🟪🟪
+🟦🟦🟦🟦
+```
+
+So, the correct variation of Tetromino L is:
+
+A. 3
+
+The final configuration of the target rectangle is:
+
+```
+🟥🟥🟥🟥
+🟩🟨🟨🟨
+🟩🟩🟪🟨
+🟩🟪🟪🟪
+🟦🟦🟦🟦
+```

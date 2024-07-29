@@ -1,0 +1,47 @@
+First, let's analyze the empty spaces in the target rectangle to determine where each polyomino could fit. We have two polyominoes to place: Tetromino T and Tetromino I. The Tetromino I can only fit in a straight line, either horizontally or vertically, and the Tetromino T needs to fit in a space where it can be placed without rotation or reflection.
+
+Looking at the target rectangle, we can see that the Tetromino I (🟦) can only fit in the bottom row, since it's the only place with four consecutive empty squares (⬜⬜⬜⬜). Let's place the Tetromino I there:
+
+```
+🟥🟥🟥🟥
+⬜🟨🟨🟨
+⬜⬜🟪🟨
+⬜🟪🟪🟪
+🟦🟦🟦🟦
+```
+
+Now, we have to place the Tetromino T (🟩). We have two variations to choose from, and we need to find a place where one of these variations can fit without rotation or reflection. The remaining empty squares form a shape that looks like this:
+
+⬜
+⬜⬜
+⬜
+
+This shape matches Variation 2 of the Tetromino T:
+
+🟩⬜
+🟩🟩
+🟩⬜
+
+So, we can place Variation 2 of the Tetromino T in the remaining empty squares:
+
+```
+🟥🟥🟥🟥
+🟩🟨🟨🟨
+🟩⬜🟪🟨
+🟩🟪🟪🟪
+🟦🟦🟦🟦
+```
+
+Filling in the last empty square with the Tetromino T:
+
+```
+🟥🟥🟥🟥
+🟩🟨🟨🟨
+🟩🟩🟪🟨
+🟩🟪🟪🟪
+🟦🟦🟦🟦
+```
+
+The correct variation of Tetromino T that fits into the empty squares is:
+
+A. 2

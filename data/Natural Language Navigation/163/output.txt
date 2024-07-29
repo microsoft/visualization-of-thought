@@ -1,0 +1,77 @@
+Let's first map out the grid based on the information given:
+
+```
+Cheetah - Military Uniform - Stingray
+Lion - Television - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+Now, we start at the position where the Television is located:
+
+```
+Cheetah - Military Uniform - Stingray
+Lion - (Television) - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+Then we follow the instructions:
+
+1. Go right by one step (to Marmoset):
+```
+Cheetah - Military Uniform - Stingray
+Lion - Television - (Marmoset)
+Spoonbill - Ladle - Electric Guitar
+```
+
+2. Go up by one step (to Stingray):
+```
+Cheetah - Military Uniform - (Stingray)
+Lion - Television - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+3. Go left by one step (to Military Uniform):
+```
+Cheetah - (Military Uniform) - Stingray
+Lion - Television - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+4. Go left by one step (to Cheetah):
+```
+(Cheetah) - Military Uniform - Stingray
+Lion - Television - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+5. Go down by one step (to Lion):
+```
+Cheetah - Military Uniform - Stingray
+(Lion) - Television - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+6. Go down by one step (to Spoonbill):
+```
+Cheetah - Military Uniform - Stingray
+Lion - Television - Marmoset
+(Spoonbill) - Ladle - Electric Guitar
+```
+
+7. Go right by one step (to Ladle):
+```
+Cheetah - Military Uniform - Stingray
+Lion - Television - Marmoset
+Spoonbill - (Ladle) - Electric Guitar
+```
+
+8. Go up by one step (to Television):
+```
+Cheetah - Military Uniform - Stingray
+Lion - (Television) - Marmoset
+Spoonbill - Ladle - Electric Guitar
+```
+
+After following all the steps, we end up at the position where the Television is located.
+
+Answer: Television

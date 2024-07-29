@@ -1,0 +1,83 @@
+Let's visualize the grid based on the information given:
+
+```
+Tibetan Terrier - European green lizard - Dust jacket
+Schooner - Fire engine - Measuring cup
+Computer mouse - Snowplow - Station wagon
+```
+
+You start at the position where the computer mouse is located:
+
+```
+- - -
+- - -
+X - -
+```
+
+Then you go up by one step:
+
+```
+- - -
+X - -
+- - -
+```
+
+Then you go up by one step again:
+
+```
+X - -
+- - -
+- - -
+```
+
+Then you go right by one step:
+
+```
+- X -
+- - -
+- - -
+```
+
+Then you go right by one step again:
+
+```
+- - X
+- - -
+- - -
+```
+
+Then you go down by one step:
+
+```
+- - -
+- - X
+- - -
+```
+
+Then you go down by one step again:
+
+```
+- - -
+- - -
+- - X
+```
+
+Then you go left by one step:
+
+```
+- - -
+- - -
+- X -
+```
+
+And finally, you go up by one step:
+
+```
+- - -
+- X -
+- - -
+```
+
+At this final position, you will find the fire engine.
+
+Answer: You will find a fire engine.

@@ -1,0 +1,83 @@
+Let's visualize the grid based on the information given:
+
+```
+[Toilet Paper] - [Oboe] - [Poke Bonnet]
+[Banded Gecko] - [Drum] - [Acoustic Guitar]
+[Carolina Anole] - [Frilled-necked Lizard] - [Brass]
+```
+
+You start at the bottom-left corner where the Carolina anole is located:
+
+```
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+[Anole] - [ ] - [ ]
+```
+
+Then you go up by one step (to Banded Gecko):
+
+```
+[ ] - [ ] - [ ]
+[Gecko] - [ ] - [ ]
+[ ] - [ ] - [ ]
+```
+
+Then you go up by one step (to Toilet Paper):
+
+```
+[Paper] - [ ] - [ ]
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+```
+
+Then you go right by one step (to Oboe):
+
+```
+[ ] - [Oboe] - [ ]
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+```
+
+Then you go down by one step (to Drum):
+
+```
+[ ] - [ ] - [ ]
+[ ] - [Drum] - [ ]
+[ ] - [ ] - [ ]
+```
+
+Then you go down by one step (to Frilled-necked Lizard):
+
+```
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+[ ] - [Lizard] - [ ]
+```
+
+Then you go right by one step (to Brass):
+
+```
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+[ ] - [ ] - [Brass]
+```
+
+Then you go up by one step (to Acoustic Guitar):
+
+```
+[ ] - [ ] - [ ]
+[ ] - [ ] - [Guitar]
+[ ] - [ ] - [ ]
+```
+
+And finally, you go up by one step (to Poke Bonnet):
+
+```
+[ ] - [ ] - [Bonnet]
+[ ] - [ ] - [ ]
+[ ] - [ ] - [ ]
+```
+
+So, after following all the steps, you will find a Poke Bonnet.
+
+Answer: Poke Bonnet

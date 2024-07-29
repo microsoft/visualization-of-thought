@@ -1,0 +1,33 @@
+First, let's look at the empty spaces in the target rectangle and determine where each polyomino could fit. We have a Tetromino I (🟩) that can fit in a straight line of 4 empty squares either horizontally or vertically, and a Tetromino T (🟪) that must fit in a configuration of 3 squares with one additional square adjacent to the middle square.
+
+The target rectangle with 8 empty squares is:
+```
+🟥🟦🟦🟦
+🟥🟨🟦⬜
+🟥🟨⬜⬜
+🟥🟨🟨⬜
+⬜⬜⬜⬜
+```
+
+We can see that the Tetromino I (🟩) can only fit in the bottom row, as it's the only place with 4 consecutive empty squares. Let's place it there:
+```
+🟥🟦🟦🟦
+🟥🟨🟦⬜
+🟥🟨⬜⬜
+🟥🟨🟨⬜
+🟩🟩🟩🟩
+```
+
+Now, we have to fit the Tetromino T (🟪). We have two variations to choose from, but we can see that Variation 2 of Tetromino T cannot fit in the remaining empty squares because it would require two empty squares on top of each other, which we do not have. Variation 3 of Tetromino T, however, can fit in the remaining space because it requires three squares in a column with one adjacent square in the middle, which matches the empty spaces we have left.
+
+Let's place Variation 3 of Tetromino T in the remaining space:
+```
+🟥🟦🟦🟦
+🟥🟨🟦🟪
+🟥🟨🟪🟪
+🟥🟨🟨🟪
+🟩🟩🟩🟩
+```
+
+The correct variation of Tetromino T that fits into the empty squares is:
+B. 3

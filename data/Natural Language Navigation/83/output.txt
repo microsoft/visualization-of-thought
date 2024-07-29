@@ -1,0 +1,18 @@
+Let's visualize the grid based on the information given:
+
+```
+Cliff - Packet - ATM
+Reel - Goblet - Mixing Bowl
+St. Bernard - Printer - Weighing Scale
+```
+
+You start at the position where the printer is located, which is the middle of the bottom row. Now, follow the instructions:
+
+1. Go left by one step: You are now at the position of the St. Bernard.
+2. Go up by one step: You are now at the position of the Reel.
+3. Go right by one step: You are now at the position of the Goblet.
+4. Go right by one step: You are now at the position of the Mixing Bowl.
+5. Go down by one step: You are now at the position of the Weighing Scale.
+6. Go left by one step: You are now back at the position of the Printer.
+
+Answer: You will find the Printer.

@@ -1,0 +1,106 @@
+Let's visualize the grid based on the information given:
+
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+You start at the bottom-left corner where the Irish Water Spaniel is located:
+
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| (Irish Water Spaniel)| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+Now, follow the instructions:
+
+1. Go up by one step (to Common Redshank):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+| (Common Redshank)|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+2. Go up by one step (to Steam Locomotive):
+```
++-----------------+-----------------+-----------------+
+| (Steam Locomotive)|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+3. Go right by one step (to Tights):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|    (Tights)     |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+4. Go right by one step (to Mobile Home):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |  (Mobile Home)  |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+5. Go down by one step (to Trimaran):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |    (Trimaran)   |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+6. Go left by one step (to Lionfish):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|     Tights      |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|   (Lionfish)    |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+7. Go up by one step (to Tights):
+```
++-----------------+-----------------+-----------------+
+| Steam Locomotive|    (Tights)     |   Mobile Home   |
++-----------------+-----------------+-----------------+
+|   Common Redshank|    Lionfish     |     Trimaran    |
++-----------------+-----------------+-----------------+
+| Irish Water Spaniel| Ocean Liner  |     Macaque     |
++-----------------+-----------------+-----------------+
+```
+
+After following all the steps, you will find Tights.
+
+Answer: Tights

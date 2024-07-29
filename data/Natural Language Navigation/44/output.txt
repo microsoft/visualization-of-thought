@@ -1,0 +1,21 @@
+Let's visualize the grid based on the information given:
+
+```
+bra - gong - lynx
+↑    ←     ↑
+hummingbird - common squirrel monkey - chickadee
+↑    →     ↑
+electric fan - orange - Pomeranian
+```
+
+You start at the position where the chickadee is located, which is the top-middle of the grid.
+
+1. Go right by one step: You move from the chickadee to the lynx.
+2. Go down by one step: You move from the lynx to the Pomeranian.
+3. Go right by one step: You cannot move right because you are at the rightmost edge of the grid.
+4. Go up by one step: You move from the Pomeranian to the chickadee.
+5. Go left by one step: You move from the chickadee to the common squirrel monkey.
+
+After following these steps, you will find the common squirrel monkey.
+
+Answer: common squirrel monkey

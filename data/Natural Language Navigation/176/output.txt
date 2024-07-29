@@ -1,0 +1,51 @@
+Let's visualize the grid based on the information given:
+
+```
+Carolina anole - Disc brake - Toucan
+Hartebeest - Dishwasher - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+You start at the position where the hartebeest is located:
+
+```
+Carolina anole - Disc brake - Toucan
+Hartebeest (start) - Dishwasher - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+Then you go right by one step:
+
+```
+Carolina anole - Disc brake - Toucan
+Hartebeest - Dishwasher (current) - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+Then you go up by one step:
+
+```
+Carolina anole - Disc brake (current) - Toucan
+Hartebeest - Dishwasher - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+Then you go left by one step:
+
+```
+Carolina anole (current) - Disc brake - Toucan
+Hartebeest - Dishwasher - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+And finally, you go down by one step:
+
+```
+Carolina anole - Disc brake - Toucan
+Hartebeest (current) - Dishwasher - Bluetick Coonhound
+Red wine - Typewriter keyboard - Armadillo
+```
+
+You end up back at the position where the hartebeest is located.
+
+Answer: You will find a hartebeest.

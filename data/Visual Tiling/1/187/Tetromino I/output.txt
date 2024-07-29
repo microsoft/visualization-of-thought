@@ -1,0 +1,27 @@
+First, let's analyze the empty spaces in the target rectangle to determine where each polyomino could fit. We have a vertical space of 4 empty squares on the left side and a horizontal space of 3 empty squares on the bottom. Since the Tetromino I (🟥) needs to occupy 4 squares in a straight line, it can only fit in the vertical space on the left side. This means we must use Variation 1 of Tetromino I.
+
+Now let's visualize the state after placing Variation 1 of Tetromino I into the target rectangle:
+
+```
+🟥🟦🟦🟦
+🟥🟦⬜🟪
+🟥⬜⬜🟪
+🟥🟩⬜🟪
+🟩🟩🟩🟪
+```
+
+Next, we need to place the Tetromino T (🟨). We have two variations to consider, but since we have already placed the Tetromino I, we can see that only Variation 3 of Tetromino T can fit into the remaining space, as it matches the shape of the empty squares.
+
+Let's visualize the state after placing Variation 3 of Tetromino T into the target rectangle:
+
+```
+🟥🟦🟦🟦
+🟥🟦🟨🟪
+🟥🟨🟨🟪
+🟥🟩🟨🟪
+🟩🟩🟩🟪
+```
+
+All the empty squares are now filled with the provided polyominoes, and the correct variation of Tetromino I that we used is:
+
+A. 1

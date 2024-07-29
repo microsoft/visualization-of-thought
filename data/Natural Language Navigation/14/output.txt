@@ -1,0 +1,51 @@
+Let's visualize the grid based on the information given:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+bell pepper        - pizza       - husky
+cliff dwelling     - Norwegian Elkhound - goldfish
+```
+
+You start at the position where the bell pepper is located:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+*bell pepper*      - pizza       - husky
+cliff dwelling     - Norwegian Elkhound - goldfish
+```
+
+Then you go down by one step:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+bell pepper        - pizza       - husky
+*cliff dwelling*   - Norwegian Elkhound - goldfish
+```
+
+Then you go right by one step:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+bell pepper        - pizza       - husky
+cliff dwelling     - *Norwegian Elkhound* - goldfish
+```
+
+Then you go up by one step:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+bell pepper        - *pizza*     - husky
+cliff dwelling     - Norwegian Elkhound - goldfish
+```
+
+And finally, you go left by one step:
+
+```
+Christmas stocking - St. Bernard - Windsor tie
+*bell pepper*      - pizza       - husky
+cliff dwelling     - Norwegian Elkhound - goldfish
+```
+
+After following all the steps, you end up back at the bell pepper.
+
+Answer: You will find a bell pepper.

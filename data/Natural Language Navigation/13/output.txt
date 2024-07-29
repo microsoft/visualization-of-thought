@@ -1,0 +1,77 @@
+Let's first map out the grid with the items you've described:
+
+```
+Promontory - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+Now, you start at the position where the packet is located:
+
+```
+Promontory - Padlock - Polaroid camera
+Packet (start) - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+Then you follow the instructions:
+
+1. Go down by one step (from Packet to Indigo bunting):
+```
+Promontory - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting (current) - Clothes iron - Dobermann
+```
+
+2. Go right by one step (from Indigo bunting to Clothes iron):
+```
+Promontory - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting - Clothes iron (current) - Dobermann
+```
+
+3. Go up by one step (from Clothes iron to Torch):
+```
+Promontory - Padlock - Polaroid camera
+Packet     - Torch (current) - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+4. Go right by one step (from Torch to Chimpanzee):
+```
+Promontory - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee (current)
+Indigo bunting - Clothes iron - Dobermann
+```
+
+5. Go up by one step (from Chimpanzee to Padlock):
+```
+Promontory - Padlock (current) - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+6. Go left by one step (from Padlock to Promontory):
+```
+Promontory (current) - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+7. Go left by one step (from Promontory off the grid, which is not possible, so we stop at Promontory):
+```
+Promontory (current) - Padlock - Polaroid camera
+Packet     - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+8. Go down by one step (from Promontory to Packet):
+```
+Promontory - Padlock - Polaroid camera
+Packet (current) - Torch   - Chimpanzee
+Indigo bunting - Clothes iron - Dobermann
+```
+
+After following all the steps, you end up at the position where the Packet is located.
+
+Answer: You will find a Packet.

@@ -1,0 +1,23 @@
+Let's first map out the grid based on the initial information provided:
+
+```
+Cassette - Hair spray - Flamingo
+Acorn squash - Great Dane - Spoonbill
+Jaguar - Toilet paper - Hamper
+```
+
+Now, let's follow the instructions from the position of the toilet paper:
+
+1. Start at the toilet paper.
+2. Go right by one step: You are now at the position of the hamper.
+3. Go up by one step: You are now at the position of the spoonbill.
+4. Go up by one step: You are now at the position of the flamingo.
+5. Go left by one step: You are now at the position of the hair spray.
+6. Go down by one step: You are now at the position of the Great Dane.
+7. Go left by one step: You are now at the position of the acorn squash.
+8. Go up by one step: You are now at the position of the cassette.
+9. Go right by one step: You are now at the position of the hair spray.
+
+After following all the steps, you will find the hair spray.
+
+Answer: Hair spray.

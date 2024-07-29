@@ -1,0 +1,83 @@
+Let's first map out the grid based on the initial information provided:
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+Bustard - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+You start at the position where the bustard is located:
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+* Bustard * - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+Then you go down by one step (to the position of the hook):
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+Bustard - Drumstick - Terrapin
+* Hook * - Pig - Pickup truck
+```
+
+Then you go right by one step (to the position of the pig):
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+Bustard - Drumstick - Terrapin
+Hook - * Pig * - Pickup truck
+```
+
+Then you go right by one step (to the position of the pickup truck):
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+Bustard - Drumstick - Terrapin
+Hook - Pig - * Pickup truck *
+```
+
+Then you go up by one step (to the position of the terrapin):
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+Bustard - Drumstick - * Terrapin *
+Hook - Pig - Pickup truck
+```
+
+Then you go up by one step (to the position of the freight car):
+
+```
+Mexican hairless dog - Sea urchin - * Freight car *
+Bustard - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+Then you go left by one step (to the position of the sea urchin):
+
+```
+Mexican hairless dog - * Sea urchin * - Freight car
+Bustard - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+Then you go left by one step (to the position of the Mexican hairless dog):
+
+```
+* Mexican hairless dog * - Sea urchin - Freight car
+Bustard - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+Finally, you go down by one step (to the position of the bustard):
+
+```
+Mexican hairless dog - Sea urchin - Freight car
+* Bustard * - Drumstick - Terrapin
+Hook - Pig - Pickup truck
+```
+
+So, after following all the steps, you will find the bustard again.
+
+Answer: Bustard
