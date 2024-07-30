@@ -37,7 +37,7 @@ python square.py --seed 8 --size 4 --steps 8 --maptype square --label_path ./lab
 
 2. **Visual Tasks**:
    
-Download the dataset of visual tasks via this [link](https://drive.google.com/file/d/1v1c7uMw68FrOJq5LMT-RfOGniTR3w1dD/view?usp=sharing), and place it under the root folder of this repo.
+Download the dataset of visual tasks via this [link](https://github.com/microsoft/visualization-of-thought/raw/main/vot-dataset-visual-tasks.zip), and place it under the root folder of this repo.
 
 ```bash
 mkdir -p dataset
