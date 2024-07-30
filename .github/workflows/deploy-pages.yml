@@ -1,10 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [" website-deployment"]
+    branches: ["website-deployment"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://microsoft.github.io/Visualization-of-Thought
+      url: https://microsoft.github.io/visualization-of-thought
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
