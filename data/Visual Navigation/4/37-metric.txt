@@ -1,1 +1,0 @@
-{"metric_list": [{"hamming_dis": 0, "valid_step": 5, "remaining_step": 0, "additional_cost": 0}]}

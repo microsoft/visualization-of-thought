@@ -1,4 +1,0 @@
-right
-up
-left
-down
