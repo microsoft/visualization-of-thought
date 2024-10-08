@@ -119,11 +119,11 @@ cd ..
 python gen_puzzle.py --config-folder ../dataset/visual-tiling/configurations/level-{K} --puzzle-folder ../dataset/visual-tiling/puzzles/level-{K} --output-jsonl ../dataset/visual-tiling/visual-tiling.jsonl --difficulty {K}
 ```
 
-### License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Contact
+## Contact
 
 If you have any questions or suggestions, feel free to open an issue in the repository or contact the authors.
 
