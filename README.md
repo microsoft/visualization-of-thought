@@ -11,7 +11,7 @@ Visualization-of-Thought (VoT) prompting is designed to enhance the spatial reas
 
 Before you begin, ensure you have met the following requirements:
 - You have installed Python 3.x.
-- You have installed nodejs.
+- You have installed nodejs (needed for data augmentation).
 
 ### Installation
 
@@ -23,9 +23,9 @@ cd Visualization-of-Thought
 pip install -r src/requirements.txt
 ```
 
-### Dataset
+### Dataset Prepare
 
-The dataset includes tasks designed to evaluate the spatial reasoning capabilities of LLMs:
+You need to download the dataset and then generate prompts for different settings. The dataset includes tasks designed to evaluate the spatial reasoning capabilities of LLMs:
 
 1. **Natural Language Navigation**:
    - A square map defined by a sequence of random walk instructions and associated objects.
@@ -42,14 +42,26 @@ Download the dataset of visual tasks via this [link](https://github.com/microsof
 ```bash
 mkdir -p dataset
 unzip VoT-Dataset-Visual-Tasks.zip -d dataset
-```
-Please notice that prompts of different settings (CoT/VoT/GPT-4V CoT) for each instance have been removed from this released version. You can add prompt template for a specific experiment setting to the "prompts" folder under each task, then run this command to patch the prompts.
-```bash
 cd src
-# add prompt template to corresponding prompt folder,
-# e.g., visual-navigation/route-planning/prompts, visual-navigation/next-step-prediction/prompts, visual-tiling/prompts
+# fill in prompt template for different settings
 sh patch-prompt.sh ../dataset
 ```
+Please notice that prompts of different settings (CoT/VoT/GPT-4V CoT) for each instance have been removed from this released version. The `patch-prompt.sh` script is provided to automatically fill in prompt templates for all experiment settings across tasks. Prompt templates are stored in the prompts folder under each visual task. For example:
+- visual-navigation/route-planning/prompts/{setting}.txt
+- visual-navigation/next-step-prediction/prompts/{setting}.txt
+- visual-tiling/prompts/{setting}.txt
+
+To create your own prompt template for a new setting, simply add the template file under the `prompts` folder of the relevant task. An example of a template can be found in the [VoT template](https://github.com/microsoft/visualization-of-thought/blob/main/src/visual-tiling/prompts/0-shot-vot). 
+
+### Evaluation
+Sample codes are provided for each task to run experiments. You need to implement the `run_llm_client` function for each visual task, which writes response to specified output path. Then run following command for evaluation:
+```bash
+python visual-navigation/route-planning/sample.py --jsonl-path ../dataset/visual-navigation/route-planning.jsonl --output-folder {output-folder} --setting {setting}
+python visual-navigation/next-step-prediction/sample.py --jsonl-path ../dataset/visual-navigation/next-step-prediction.jsonl --output-folder {output-folder} --setting {setting}
+python visual-tiling/sample.py --jsonl-path ../dataset/visual-tiling/visual-tiling.jsonl --output-folder {output-folder} --setting {setting}
+```
+The performance of specific setting will be printed on the terminal. The path of log file is also provided, which includes all failing cases for debugging purpose.
+To be noticed, the LLM-generated responses are parsed based on regex pattern, and default patterns implemented in the code are for GPT-family models. You may need to **specify regex patterns for other models** and pay attention to "failing to parse" cases in the log file. To use the regex patterns we implemented for [LLaMA](https://github.com/microsoft/visualization-of-thought/blob/main/src/visual-navigation/next-step-prediction/llama-regex-patterns.txt) or your customized patterns, just specify the parameter `--regex-path` when running the evaluation script.
 
 ## Dataset Schema
 ### Main Schema
@@ -58,7 +70,7 @@ sh patch-prompt.sh ../dataset
 |-------------------|---------------------------------------------------------------------------------------------|-------------------|----------------------------------|
 | `desc`            | Text input for LLMs.                                                                        | String            | "" |
 | `desc_multimodal` | Message array input for MLLMs, containing text and images, following [Azure OpenAI format](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/gpt-with-vision?tabs=rest%2Csystem-assigned%2Cresource#call-the-chat-completion-apis).   | Array of Messages | `[{}]` |
-| `answer`          | A single string, or a list of strings for route planning tasks.                             | String or Array   | "A" or `["left", "down"]` |
+| `answer`          | A single string, or a list of strings for route planning tasks.                             | String or String Array   | "A" or `["left", "down"]` |
 | `puzzle_path`     | Folder of each prompt instance.                                                               | String            | "puzzles/level-2/103/Tetromino T"            |
 | `config_path`     | Folder of images and original spatial configurations.                                         | String            | "configurations/level-2/103"         |
 | `difficulty`      | Difficulty level of the question or puzzle.                                                 | Integer            | 2                         |
@@ -71,17 +83,6 @@ sh patch-prompt.sh ../dataset
 | `question`        | The navigation question.   | String | "" |
 | `answer`          | The name of the object to be found.     | String | "Sofa" |
 
-## Evaluation
-Sample codes are provided for each task to run experiments. You need to implement the run_llm_client function for each visual task.
-1. **Visual Navigation**:
-```bash
-python visual-navigation/route-planning/sample.py --jsonl-path ../dataset/visual-navigation/route-planning.jsonl --output-folder {output-folder} --setting {setting}
-python visual-navigation/next-step-prediction/sample.py --jsonl-path ../dataset/visual-navigation/next-step-prediction.jsonl --output-folder {output-folder} --setting {setting}
-```
-2. **Visual Tiling**:
-```bash
-python visual-tiling/sample.py --jsonl-path ../dataset/visual-tiling/visual-tiling.jsonl --output-folder {output-folder} --setting {setting}
-```
 
 ## Code for data construction/augmentation
 This dataset could be extended by specifying the difficulty. Please refer to the scripts generating the dataset of visual tasks.
@@ -105,6 +106,7 @@ python visual-navigation/next-step-prediction/gen_puzzle.py --config-folder ../d
 ```bash
 # make sure to switch to the src folder
 mkdir -p ../dataset
+# uncomment line `npm install` to install dependency node modules.
 sh visual-tiling/gen-data.sh ../dataset/visual-tiling
 ```
 
@@ -127,7 +129,7 @@ If you have any questions or suggestions, feel free to open an issue in the repo
 
 ## Citation
 
-If you use this dataset, please cite the following paper:
+If you use this dataset, please cite us:
 
 ```bibtex
 @misc{wu2024mindseyellmsvisualizationofthought,
